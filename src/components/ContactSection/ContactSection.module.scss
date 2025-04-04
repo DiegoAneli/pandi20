@@ -1,0 +1,35 @@
+.section {
+    background-color: #f8f1e9;
+    padding: 4rem 1.5rem;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2rem;
+    color: #8b0000;
+    font-family: "Playfair Display", serif;
+    margin-bottom: 2rem;
+  }
+  
+  .info {
+    font-family: Inter, sans-serif;
+    color: #2e2e2e;
+    font-size: 1rem;
+    line-height: 2;
+  }
+  
+  .links {
+    margin-top: 2rem;
+  
+    a {
+      margin: 0 1rem;
+      color: #8b0000;
+      font-weight: 500;
+      transition: color 0.3s;
+  
+      &:hover {
+        color: #2e2e2e;
+      }
+    }
+  }
+  
