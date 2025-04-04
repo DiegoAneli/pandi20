@@ -1,0 +1,30 @@
+.hero {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f1e9;
+  
+    .content {
+      text-align: center;
+  
+      h1 {
+        font-size: 3rem;
+        font-family: "Playfair Display", serif;
+        color: #8b0000;
+  
+        span {
+          letter-spacing: 0.05em;
+          color: #2e2e2e;
+        }
+      }
+  
+      p {
+        margin-top: 1.5rem;
+        font-size: 1.25rem;
+        color: #2e2e2e;
+        font-family: Inter, sans-serif;
+      }
+    }
+  }
+  

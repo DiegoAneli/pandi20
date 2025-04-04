@@ -1,4 +1,3 @@
-// src/store/useStore.ts
 import { create } from "zustand";
 
 type State = {
@@ -8,5 +7,5 @@ type State = {
 
 export const useStore = create<State>((set) => ({
   selectedRecipe: null,
-  setSelectedRecipe: (id) => set({ selectedRecipe: id }),
+  setSelectedRecipe: (id: string) => set({ selectedRecipe: id }),
 }));
