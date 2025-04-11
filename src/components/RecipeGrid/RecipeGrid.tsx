@@ -7,22 +7,22 @@ const recipes = [
   {
     title: "Margherita",
     description: "Burrata, Bebè Rosso, Basil Cream, EVO Oil",
-    imageUrl: "/assets/ricetta_margherita.png",
+    imageUrl: "/assets/pizza3.png",
   },
   {
     title: "Vegetarian",
     description: "Zucchine, carote, patate, soia e olio al rosmarino",
-    imageUrl: "/assets/ricetta_vegetariana.png",
+    imageUrl: "/assets/pizza3.png",
   },
   {
     title: "Pulled Pork",
     description: "BBQ, pulled pork, cipolla agrodolce, senape",
-    imageUrl: "/assets/ricetta_pulledpork.png",
+    imageUrl: "/assets/pizza3.png",
   },
   {
     title: "Tuna & Onion",
     description: "Tonno tataki, cipolla caramellata, gel zenzero",
-    imageUrl: "/assets/ricetta_tonno.png",
+    imageUrl: "/assets/pizza3.png",
   }
 ];
 

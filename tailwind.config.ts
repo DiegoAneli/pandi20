@@ -1,13 +1,13 @@
-import type { Config } from 'tailwindcss';
+import { type Config } from 'tailwindcss';
 
 const config: Config = {
   content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
+    fontFamily: {
+      sans: ['Inter', 'sans-serif'],
+      serif: ['"Playfair Display"', 'serif'],
+    },
     extend: {
-      fontFamily: {
-        serif: ['"Playfair Display"', 'serif'],
-        sans: ['Inter', 'sans-serif'],
-      },
       colors: {
         beige: '#f8f1e9',
         amaranto: '#8B0000',
