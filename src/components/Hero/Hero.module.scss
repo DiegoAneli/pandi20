@@ -1,30 +1,96 @@
 .hero {
-    min-height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f8f1e9;
-  
-    .content {
-      text-align: center;
-  
-      h1 {
-        font-size: 3rem;
-        font-family: "Playfair Display", serif;
-        color: #8b0000;
-  
-        span {
-          letter-spacing: 0.05em;
-          color: #2e2e2e;
-        }
-      }
-  
-      p {
-        margin-top: 1.5rem;
-        font-size: 1.25rem;
-        color: #2e2e2e;
-        font-family: Inter, sans-serif;
-      }
-    }
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-image: url("/assets/sfondo_legno.png"); // sfondo legno
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.left {
+  position: relative;
+  flex: 1;
+  min-width: 50%;
+}
+
+.image {
+  object-fit: contain;
+  object-position: top left;
+  z-index: 1;
+  transform: scale(1.4); // 👈 aumenta la scala
+  transform-origin: top left;
+}
+
+
+
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 4rem;
+  color: white;
+  z-index: 2;
+}
+
+.branding {
+  display: flex;
+  flex-direction: column; // 👈 imposta disposizione verticale
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.logoWrapper {
+  width: 80px;
+  height: 80px;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+}
+
+.brandText {
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.brandLine {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.highlight {
+  font-weight: 700;
+  color: white;
+}
+
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1.4;
+  margin-top: 1rem;
+
+  strong {
+    font-weight: 700;
+    color: white;
   }
-  
+
+  &::after {
+    content: "";
+    display: block;
+    margin-top: 1.5rem;
+    width: 60px;
+    height: 4px;
+    background-color: #8B0000; // amaranto
+    border-radius: 2px;
+  }
+}
+
+

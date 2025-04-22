@@ -1,0 +1,94 @@
+.section {
+    background-image: url("/assets/sfondo_legno.png");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 5rem 2rem;
+    text-align: center;
+    position: relative;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+  
+    span {
+      color: #e03131;
+    }
+  }
+  
+  .ellipse {
+    background-color: #8b0000;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 999px;
+    width: fit-content;
+    margin: 0 auto 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+  
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    flex: 1;
+    min-width: 300px;
+    background-color: rgba(255, 255, 255, 0.06);
+    padding: 2rem 1.5rem;
+    border-radius: 1rem;
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+  
+    &:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      top: 2rem;
+      right: 0;
+      height: calc(100% - 4rem);
+      border-right: 2px dashed white;
+    }
+  
+    h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+  
+    ul {
+      list-style: none;
+      padding: 0;
+      text-align: left;
+  
+      li {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+  
+        strong {
+          font-weight: 700;
+          color: #fff;
+        }
+  
+        .highlight {
+          color: #7FFFD4;
+          font-weight: 700;
+        }
+      }
+    }
+  
+    .image {
+      border-radius: 0.75rem;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  

@@ -1,22 +1,51 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import styles from "./Hero.module.scss";
 
 export default function Hero() {
   return (
     <section className={styles.hero}>
+      {/* Parte sinistra: immagine */}
+      <div className={styles.left}>
+        <Image
+          src="/assets/pizzaHero.png"
+          alt="Italian food plate"
+          fill
+          priority
+          className={styles.image}
+        />
+      </div>
+
+      {/* Parte destra: logo + testo */}
       <motion.div
-        initial={{ opacity: 0, y: 40 }}
-        animate={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, x: 50 }}
+        animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
-        className={styles.content}
+        className={styles.right}
       >
-        <h1>
-          The Italian Food{" "}
-          <span>rEVOLUTION</span>
+        <div className={styles.branding}>
+  <div className={styles.logoWrapper}>
+    <Image
+      src="/assets/logo.png"
+      alt="PAN DI 20 icon"
+      width={80}
+      height={80}
+      className={styles.logo}
+    />
+  </div>
+  <div className={styles.brandText}>
+    <span className={styles.brandLine}>
+      THE ITALIAN FOOD <span className={styles.highlight}>rEVOLUTION</span>
+    </span>
+  </div>
+</div>
+
+
+        <h1 className={styles.title}>
+          Bring the new <strong>Italian</strong> style to your venue
         </h1>
-        <p>Bring the new Italian style to your venue</p>
       </motion.div>
     </section>
   );

@@ -1,0 +1,119 @@
+.section {
+  background-image: url("/assets/sfondo_legno.png");
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 0;
+  color: white;
+}
+
+.top {
+  padding: 4rem 2rem 2rem;
+}
+
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.heading {
+  text-align: left;
+
+  .ribbon {
+    display: inline-block;
+    background-color: #8B0000;
+    padding: 0.5rem 2rem;
+    border-radius: 4px;
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+  }
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 0;
+  }
+
+  p {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    max-width: 420px;
+  }
+}
+
+.logo {
+  padding-top: 0.5rem;
+
+  img {
+    width: 160px;
+    height: auto;
+  }
+}
+
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -8rem; // 👈 sposta l’immagine più in alto
+  margin-bottom: -6rem; // meno distacco verso i box rossi
+
+  .image {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    z-index: 2;
+    position: relative;
+  }
+}
+
+
+.bottom {
+  display: flex;
+  background-color: #8B0000;
+  padding: 3rem 2rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  //border-top: 3px solid white;
+  padding: 5rem 2rem 3rem;
+}
+
+.box {
+  flex: 1;
+  min-width: 280px;
+  max-width: 33.33%;
+  padding: 0 1.5rem;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    width: 1px;
+    height: calc(100% - 2rem);
+    background: white;
+    border-right: 2px dashed white;
+  }
+
+  &:last-child::after {
+    display: none;
+  }
+
+  .icon {
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  strong {
+    color: white;
+    font-weight: bold;
+  }
+}
