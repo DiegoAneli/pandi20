@@ -8,6 +8,7 @@ import RevolutionSection from "@/components/RevolutionSection/RevolutionSection"
 import ComparisonSection from "@/components/ComparisonSection/ComparisonSection";
 import ProductFeaturesSection from "@/components/ProductFeaturesSection/ProductFeaturesSection";
 import ProfessionalBenefitsSection from "@/components/ProfessionalBenefitsSection/ProfessionalBenefitsSection";
+import ExcellenceSection from "@/components/ExcellenceSection/ExcellenceSection";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <ComparisonSection />
       <ProductFeaturesSection />
       <ProfessionalBenefitsSection />
+      <ExcellenceSection />
       <ContactSection />
     </Layout>
   );
