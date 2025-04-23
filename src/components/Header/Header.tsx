@@ -16,9 +16,11 @@ export default function Header() {
   }, []);
 
   const links = [
-    { href: "#recipes", label: "Ricette" },
-    { href: "#storia", label: "Chi siamo" },
-    { href: "#contatti", label: "Contatti" },
+    { href: "#about", label: "About" },
+    { href: "#whats", label: "What's Pandi20" },
+    { href: "#revolution", label: "A rEVOLUTION" },
+    { href: "#product", label: "Product" },
+    { href: "#contact", label: "Contact" },
   ];
 
   return (
@@ -38,10 +40,13 @@ export default function Header() {
             height={48}
             priority
           />
-          <h1 className="text-4xl font-serif tracking-wide text-amaranto">
-            Pandi20
-          </h1>
         </Link>
+
+        <div className="bg-amaranto text-beige p-4">
+  Test colore personalizzato
+</div>
+
+
 
         {/* Nav molto distanziato */}
         <nav className="flex gap-[1rem] font-sans text-lg tracking-wide">

@@ -1,4 +1,3 @@
-import Layout from "@/components/Layout";
 import Hero from "@/components/Hero";
 import ContactSection from "@/components/ContactSection";
 import InnovationSection from "@/components/InnovationSection/InnovationSection";
@@ -9,10 +8,13 @@ import ComparisonSection from "@/components/ComparisonSection/ComparisonSection"
 import ProductFeaturesSection from "@/components/ProductFeaturesSection/ProductFeaturesSection";
 import ProfessionalBenefitsSection from "@/components/ProfessionalBenefitsSection/ProfessionalBenefitsSection";
 import ExcellenceSection from "@/components/ExcellenceSection/ExcellenceSection";
+//import Header from "@/components/Header/Header";
+//import Footer from "@/components/Footer/Footer";
 
 export default function Home() {
   return (
-    <Layout>
+    <>
+      
       <Hero />
       <InnovationSection />
       <TraditionSection />
@@ -23,6 +25,7 @@ export default function Home() {
       <ProfessionalBenefitsSection />
       <ExcellenceSection />
       <ContactSection />
-    </Layout>
+    
+    </>
   );
 }

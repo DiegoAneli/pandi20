@@ -3,10 +3,17 @@
   height: 100vh;
   width: 100%;
   position: relative;
-  background-image: url("/assets/sfondo_legno.png"); // sfondo legno
+  background-image: url("/assets/sfondo_legno.png");
   background-size: cover;
   background-position: center;
   overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7); // filtro scuro
+  z-index: 0;
 }
 
 .left {
@@ -19,11 +26,9 @@
   object-fit: contain;
   object-position: top left;
   z-index: 1;
-  transform: scale(1.4); // 👈 aumenta la scala
+  transform: scale(1.4);
   transform-origin: top left;
 }
-
-
 
 .right {
   flex: 1;
@@ -37,15 +42,15 @@
 
 .branding {
   display: flex;
-  flex-direction: column; // 👈 imposta disposizione verticale
+  flex-direction: column;
   align-items: flex-start;
   gap: 1rem;
   margin-bottom: 2rem;
 }
 
 .logoWrapper {
-  width: 80px;
-  height: 80px;
+  width: 300px;
+  height: 240px;
 }
 
 .logo {
@@ -63,13 +68,24 @@
 .brandLine {
   font-size: 1rem;
   font-weight: 600;
+  line-height: 1.4;
+}
+
+.rCircle {
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 0.1em 0.4em;
+  font-size: 0.85em;
+  vertical-align: middle;
+  margin-right: 0.15em;
 }
 
 .highlight {
+  margin-left: 5px;
   font-weight: 700;
   color: white;
 }
-
 
 .title {
   font-size: 2.5rem;
@@ -88,9 +104,7 @@
     margin-top: 1.5rem;
     width: 60px;
     height: 4px;
-    background-color: #8B0000; // amaranto
+    background-color: #8B0000;
     border-radius: 2px;
   }
 }
-
-

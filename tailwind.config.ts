@@ -1,19 +1,24 @@
-import { type Config } from 'tailwindcss';
+// tailwind.config.ts
+import type { Config } from 'tailwindcss';
 
 const config: Config = {
-  content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
+  content: [
+    './src/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
   theme: {
+    extend: {
+      colors: {
+        beige: 'var(--color-beige)',
+        amaranto: 'var(--color-amaranto)',
+        salvia: 'var(--color-salvia)',
+        grafite: 'var(--color-grafite)',
+      },
+    },
     fontFamily: {
       sans: ['Inter', 'sans-serif'],
       serif: ['"Playfair Display"', 'serif'],
-    },
-    extend: {
-      colors: {
-        beige: '#f8f1e9',
-        amaranto: '#8B0000',
-        salvia: '#a3b18a',
-        grafite: '#2e2e2e',
-      },
     },
   },
   plugins: [],
