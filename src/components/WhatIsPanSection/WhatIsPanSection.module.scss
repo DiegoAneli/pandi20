@@ -8,6 +8,10 @@
 
 .top {
   padding: 4rem 2rem 2rem;
+
+  @media (max-width: 768px) {
+    padding: 3rem 1.5rem 1rem;
+  }
 }
 
 .headerRow {
@@ -16,6 +20,7 @@
   align-items: flex-start;
   flex-wrap: wrap;
   margin-bottom: 2rem;
+  gap: 1rem;
 }
 
 .heading {
@@ -33,6 +38,10 @@
     font-size: 2rem;
     font-weight: 800;
     margin: 0;
+
+    @media (max-width: 480px) {
+      font-size: 1.6rem;
+    }
   }
 
   p {
@@ -40,6 +49,11 @@
     font-weight: 500;
     margin-top: 1rem;
     max-width: 420px;
+
+    @media (max-width: 768px) {
+      font-size: 1.1rem;
+      max-width: 100%;
+    }
   }
 }
 
@@ -49,6 +63,10 @@
   img {
     width: 160px;
     height: auto;
+
+    @media (max-width: 480px) {
+      width: 120px;
+    }
   }
 }
 
@@ -56,8 +74,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -8rem; // 👈 sposta l’immagine più in alto
-  margin-bottom: -6rem; // meno distacco verso i box rossi
+  margin-top: -8rem;
+  margin-bottom: -6rem;
+
+  @media (max-width: 768px) {
+    margin-top: -5rem;
+    margin-bottom: -3rem;
+  }
 
   .image {
     width: auto;
@@ -68,15 +91,18 @@
   }
 }
 
-
 .bottom {
   display: flex;
   background-color: #8B0000;
-  padding: 3rem 2rem;
+  padding: 5rem 2rem 3rem;
   justify-content: space-between;
   flex-wrap: wrap;
-  //border-top: 3px solid white;
-  padding: 5rem 2rem 3rem;
+  gap: 2rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 3rem 1.5rem;
+  }
 }
 
 .box {
@@ -85,6 +111,11 @@
   max-width: 33.33%;
   padding: 0 1.5rem;
   position: relative;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+    padding: 0;
+  }
 
   &::after {
     content: "";
@@ -95,6 +126,10 @@
     height: calc(100% - 2rem);
     background: white;
     border-right: 2px dashed white;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 
   &:last-child::after {

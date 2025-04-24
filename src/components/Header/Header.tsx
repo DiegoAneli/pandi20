@@ -3,9 +3,12 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import styles from "./Header.module.scss";
+import { Menu, X } from "lucide-react";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => {
@@ -24,42 +27,23 @@ export default function Header() {
   ];
 
   return (
-    <header
-  className={`sticky top-0 z-50 transition-all duration-300 border-b border-gray-200 ${
-    scrolled ? "bg-beige/80 backdrop-blur shadow-md py-10" : "bg-beige py-20"
-  } text-amaranto`}
->
-
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-8">
-        {/* Logo + brand */}
-        <Link href="/" className="flex items-center gap-6">
-          <Image
-            src="/assets/logo.png"
-            alt="Pan di20 logo"
-            width={48}
-            height={48}
-            priority
-          />
+    <header className={`${styles.header} ${scrolled ? styles.scrolled : ""}`}>
+      <div className={styles.container}>
+        <Link href="/" className={styles.logo}>
+          <Image src="/assets/logo.png" alt="Pan di20 logo" width={48} height={48} priority />
         </Link>
 
-        <div className="bg-amaranto text-beige p-4">
-  Test colore personalizzato
-</div>
-
-
-
-        {/* Nav molto distanziato */}
-        <nav className="flex gap-[1rem] font-sans text-lg tracking-wide">
+        <nav className={`${styles.nav} ${menuOpen ? styles.open : ""}`}>
           {links.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className="text-amaranto hover:underline underline-offset-4 transition"
-            >
+            <a key={link.href} href={link.href} className={styles.navLink}>
               {link.label}
             </a>
           ))}
         </nav>
+
+        <button className={styles.menuButton} onClick={() => setMenuOpen(!menuOpen)}>
+          {menuOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
       </div>
     </header>
   );

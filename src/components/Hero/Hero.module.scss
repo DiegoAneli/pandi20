@@ -1,5 +1,6 @@
 .hero {
   display: flex;
+  flex-direction: row;
   height: 100vh;
   width: 100%;
   position: relative;
@@ -7,12 +8,17 @@
   background-size: cover;
   background-position: center;
   overflow: hidden;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    height: auto;
+  }
 }
 
 .overlay {
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.7); // filtro scuro
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: 0;
 }
 
@@ -20,6 +26,11 @@
   position: relative;
   flex: 1;
   min-width: 50%;
+
+  @media (max-width: 768px) {
+    min-width: 100%;
+    height: 300px;
+  }
 }
 
 .image {
@@ -28,6 +39,10 @@
   z-index: 1;
   transform: scale(1.4);
   transform-origin: top left;
+
+  @media (max-width: 768px) {
+    transform: scale(1.1);
+  }
 }
 
 .right {
@@ -38,6 +53,12 @@
   padding: 0 4rem;
   color: white;
   z-index: 2;
+
+  @media (max-width: 768px) {
+    padding: 2rem;
+    text-align: center;
+    align-items: center;
+  }
 }
 
 .branding {
@@ -46,11 +67,20 @@
   align-items: flex-start;
   gap: 1rem;
   margin-bottom: 2rem;
+
+  @media (max-width: 768px) {
+    align-items: center;
+  }
 }
 
 .logoWrapper {
   width: 300px;
   height: 240px;
+
+  @media (max-width: 768px) {
+    width: 180px;
+    height: 140px;
+  }
 }
 
 .logo {
@@ -106,5 +136,9 @@
     height: 4px;
     background-color: #8B0000;
     border-radius: 2px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 1.8rem;
   }
 }
