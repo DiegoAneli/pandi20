@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function ComparisonSection() {
   return (
-    <section className={styles.section}>
+    <section id="comparison" className={styles.section}>
       <div className={styles.ellipse}>
         <p>
           <strong>Where Innovation Meets Tradition:</strong>
