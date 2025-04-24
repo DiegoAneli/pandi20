@@ -18,14 +18,14 @@ export default function Header() {
 
   const leftLinks = [
     //{ href: "#about", label: "About" },
-    { href: "#whats", label: "What's Pandi20" },
-    { href: "#revolution", label: "A rEVOLUTION" },
+    { href: "#whats", label: "WHAT'S PANDI20" },
+    { href: "#revolution", label: "A REVOLUTION" },
   ];
 
   const rightLinks = [
-    { href: "#comparison", label: "Comparison" },
-    { href: "#product", label: "Product" },
-    { href: "#contact", label: "Contact" },
+    { href: "#comparison", label: "COMPARISON" },
+    { href: "#product", label: "PRODUCT" },
+    { href: "#contact", label: "CONTACT" },
   ];
 
   return (

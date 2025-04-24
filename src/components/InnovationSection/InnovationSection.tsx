@@ -6,22 +6,22 @@ import styles from "./InnovationSection.module.scss";
 export default function InnovationSection() {
   const cards = [
     {
-      icon: <Award size={32} strokeWidth={2.5} className="text-white" />,
+      icon: <Award size={32} strokeWidth={1} className="text-white" />,
       title: "Versatility:",
       text: "Compatible with infinite topping combinations, from classic to gourmet. Ideal for innovative pizzerias.",
     },
     {
-      icon: <HandCoins size={32} strokeWidth={2.5} className="text-white" />,
+      icon: <HandCoins size={32} strokeWidth={1} className="text-white" />,
       title: "Convenience:",
       text: "Simplifies plating and usage, suitable for professionals and non-experts alike.",
     },
     {
-      icon: <Euro size={32} strokeWidth={2.5} className="text-white" />,
+      icon: <Euro size={32} strokeWidth={1} className="text-white" />,
       title: "Increase the average ticket value:",
       text: "Thanks to a unique product with high perceived value for the end customer.",
     },
     {
-      icon: <Trash2 size={32} strokeWidth={2.5} className="text-white" />,
+      icon: <Trash2 size={32} strokeWidth={1} className="text-white" />,
       title: "No Waste:",
       text: "Precisely portioned for optimal use.",
     },
@@ -30,12 +30,12 @@ export default function InnovationSection() {
   return (
     <section id="about" className={styles.section}>
       {/* sfondo rosso laterale */}
-      <div className={styles.backgroundRight}></div>
+      
 
       <div className={styles.content}>
         <div className={styles.left}>
           <p className={styles.label}>INNOVATION</p>
-          <h2 className={styles.title}>Pan di20</h2>
+          <h2 className={styles.title}>Pandi20</h2>
           <p className={styles.subtitle}>
             The Best offer to a Chef and pizza Maker
           </p>
@@ -60,6 +60,7 @@ export default function InnovationSection() {
             className={styles.image}
           />
         </div>
+        <div className={styles.backgroundRight}></div>
       </div>
     </section>
   );
