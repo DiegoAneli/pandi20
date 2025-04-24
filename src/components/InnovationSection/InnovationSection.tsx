@@ -28,7 +28,7 @@ export default function InnovationSection() {
   ];
 
   return (
-    <section className={styles.section}>
+    <section id="about" className={styles.section}>
       {/* sfondo rosso laterale */}
       <div className={styles.backgroundRight}></div>
 

@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 export default function WhatIsPanSection() {
   return (
-    <section className={styles.section}>
+    <section id="whats" className={styles.section}>
       <div className={styles.top}>
         <div className={styles.headerRow}>
             <div className={styles.heading}>

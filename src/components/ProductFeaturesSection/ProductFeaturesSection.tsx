@@ -6,7 +6,7 @@ import { Clock3, Wheat, Pizza, Leaf } from "lucide-react";
 
 export default function ProductFeaturesSection() {
   return (
-    <section className={styles.section}>
+    <section id="product" className={styles.section}>
       <div className={styles.content}>
         <div className={styles.left}>
           <h2 className={styles.title}>Product Features</h2>

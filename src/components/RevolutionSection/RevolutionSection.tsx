@@ -24,7 +24,7 @@ export default function RevolutionSection() {
   ];
 
   return (
-    <section className={styles.section}>
+    <section id="revolution" className={styles.section}>
       <div className={styles.backgroundRight}></div>
 
       <div className={styles.content}>
