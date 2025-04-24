@@ -32,8 +32,13 @@ export default function Header() {
     <header className={`${styles.header} ${scrolled ? styles.scrolled : ""}`}>
       <div className={styles.container}>
       <button className={styles.menuButton} onClick={() => setMenuOpen(!menuOpen)}>
-        {menuOpen ? <X size={28} color="white" /> : <Menu size={28} color="white" />}
+        {menuOpen ? (
+          <X size={28} className={scrolled ? styles.iconScrolled : styles.iconDefault} />
+        ) : (
+          <Menu size={28} className={scrolled ? styles.iconScrolled : styles.iconDefault} />
+        )}
       </button>
+
 
 
         <nav className={`${styles.navGroup} ${menuOpen ? styles.open : ""}`}>

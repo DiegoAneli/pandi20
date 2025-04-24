@@ -95,6 +95,19 @@
   }
 }
 
+
+.iconDefault {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.iconScrolled {
+  color: var(--color-amaranto);
+  transition: color 0.3s ease;
+}
+
+
+
 .menuIcon {
   color: white;
 }
