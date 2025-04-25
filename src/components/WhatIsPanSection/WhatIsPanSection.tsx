@@ -1,54 +1,83 @@
 "use client";
 
-
+import { useState } from "react";
 import styles from "./WhatIsPanSection.module.scss";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
+const slides = [
+  {
+    src: "/assets/panplate.png",
+    alt: "Classic Pan di20",
+    description: "Type 1 wheat, durum wheat & olive oil. Perfect for bruschetta or gourmet starters.",
+  },
+  {
+    src: "/assets/panplate.png",
+    alt: "Whole grain Pan di20",
+    description: "Rich in fibers with Type 2 soft wheat and spelt. Ideal with vegetable toppings.",
+  },
+  {
+    src: "/assets/panplate.png",
+    alt: "Mini Pan di20",
+    description: "Perfect size for tasting menus and sweet or savory bites.",
+  },
+];
 
 export default function WhatIsPanSection() {
+  const [current, setCurrent] = useState(0);
+  const next = () => setCurrent((prev) => (prev + 1) % slides.length);
+  const prev = () => setCurrent((prev) => (prev - 1 + slides.length) % slides.length);
+
   return (
     <section id="whats" className={styles.section}>
       <div className={styles.top}>
         <div className={styles.headerRow}>
-            <div className={styles.heading}>
+          <div className={styles.heading}>
             <div className={styles.ribbon}>
-                <h2>What is Pan di20 ?</h2>
+              <h2>What is Pan di20 ?</h2>
             </div>
             <p>The Only Pizza Base with Triple Fermentation.</p>
-            </div>
+          </div>
 
-            <div className={styles.logo}>
-            <Image
-                src="/assets/logo.png"
-                alt="Pan di20 Logo"
-                width={160}
-                height={80}
-                priority
-            />
-            </div>
+          <div className={styles.logo}>
+            <Image src="/assets/logo.png" alt="Pan di20 Logo" width={160} height={80} priority />
+          </div>
         </div>
 
-        <motion.div
-  className={styles.imageWrapper}
-  initial={{ opacity: 0, y: 40 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  viewport={{ once: true }}
-  transition={{ duration: 0.8, ease: "easeOut" }}
->
-  <Image
-    src="/assets/panplate.png"
-    alt="Pan di20"
-    width={800}
-    height={400}
-    className={styles.image}
-    priority
-  />
-</motion.div>
+        <div className={styles.carouselWrapper}>
+          <button onClick={prev} className={styles.navButton}>
+            <ChevronLeft size={32} />
+          </button>
 
-</div>
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={current}
+              className={styles.imageWrapper}
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -50 }}
+              transition={{ duration: 0.5 }}
+            >
+              <Image
+                src={slides[current].src}
+                alt={slides[current].alt}
+                width={800}
+                height={400}
+                className={styles.image}
+                priority
+              />
+              <p className={styles.caption}>{slides[current].description}</p>
+            </motion.div>
+          </AnimatePresence>
 
+          <button onClick={next} className={styles.navButton}>
+            <ChevronRight size={32} />
+          </button>
+        </div>
+      </div>
 
+     
       <div className={styles.bottom}>
         <div className={styles.box}>
           <span className={styles.icon}>🌾</span>
