@@ -35,8 +35,8 @@ export default function RevolutionSection() {
           </h2>
           <p className={styles.subtitle}>In the concept of the pizza base</p>
           <p className={styles.text}>
-            Pan di20 redefines the concept of a pizza base in modern gastronomy.
-            It is not just a supporting element for dishes, but a key component
+            Pan di20 redefines the concept of a pizza base in modern gastronomy.<br></br>
+            It is not just a supporting element for dishes, <br></br>but a key component
             that enhances every ingredient.
           </p>
 

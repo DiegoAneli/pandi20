@@ -52,7 +52,7 @@ export default function Header() {
               
           <div className={styles.logoDesktop}>
             <Link href="/" className={styles.logo}>
-              <Image src="/assets/logo.png" alt="Pan di20 logo" width={82} height={82} priority />
+              <Image src="/assets/logo.png" alt="Pan di20 logo" width={82} height={70} priority />
             </Link>
           </div>
 

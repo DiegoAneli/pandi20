@@ -10,17 +10,32 @@ const slides = [
   {
     src: "/assets/panplate.png",
     alt: "Classic Pan di20",
-    description: "Type 1 wheat, durum wheat & olive oil. Perfect for bruschetta or gourmet starters.",
+    description: "Pan di20 baked with tomato sauce and mozzarella; after baking, add: Burrata, Bebè Rosso (Ginos), Basil Cream (or Genovese Pesto), and EVO Oil."
   },
   {
     src: "/assets/panplate.png",
     alt: "Whole grain Pan di20",
-    description: "Rich in fibers with Type 2 soft wheat and spelt. Ideal with vegetable toppings.",
+    description: "Pan di20 baked with tomato sauce and cooked vegetables of choice (potatoes, carrots, onions, zucchini,etc.).After baking add :fresh vegetables of choice,seasoned with rosemary-infused oil,oregano,salt,and a drizzle of soy sauce.",
   },
   {
     src: "/assets/panplate.png",
     alt: "Mini Pan di20",
-    description: "Perfect size for tasting menus and sweet or savory bites.",
+    description: "Pan di20 baked with Mozzarella;after baking, add:Pulled Pork,BBQ Sauce (or your preferred sauce),Sweet and Sour Onion,Mustard Sauce Evo Oil",
+  },
+  {
+    src: "/assets/panplate.png",
+    alt: "Classic Pan di20",
+    description: "Pan di20 baked without toppings;after baking, add:Burrata, Caramelized Red Onion(Ginos), Tuna Tataki,Ginger Gel,and EVO Oil."
+  },
+  {
+    src: "/assets/panplate.png",
+    alt: "Whole grain Pan di20",
+    description: "Fior di Latte Mozzarella during baking; after baking.add Beef Tartare, Capers, Pepper,Grilled Spring Onion (Ginos),Mustard Cream, and EVO Oil.Optional additions:Parmesan flakes or cream,Raspberry or Mango gel.",
+  },
+  {
+    src: "/assets/panplate.png",
+    alt: "Mini Pan di20",
+    description: "Pan di20 baked with Artichoke Cream and Mozzarella; after baking :Duck Breast Roast Beef,Its Jus with Orange,Fresh Artichokes,and Saffron Parmesan Cream.",
   },
 ];
 

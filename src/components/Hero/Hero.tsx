@@ -32,7 +32,7 @@ export default function Hero() {
               src="/assets/logo.png"
               alt="PAN DI 20 icon"
               width={80}
-              height={80}
+              height={70}
               className={styles.logo}
             />
           </div>
