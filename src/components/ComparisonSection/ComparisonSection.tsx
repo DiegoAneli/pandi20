@@ -61,7 +61,7 @@ export default function ComparisonSection() {
         {/* Pizza */}
         <div className={styles.card}>
           <Image
-            src="/assets/pizza.png"
+            src="/assets/pizza3.png"
             alt="Pizza"
             width={300}
             height={200}

@@ -8,33 +8,33 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const slides = [
   {
-    src: "/assets/panplate.png",
-    alt: "Classic Pan di20",
+    src: "/assets/margherita.png",
+    alt: "Margherita",
     description: "Pan di20 baked with tomato sauce and mozzarella; after baking, add: Burrata, Bebè Rosso (Ginos), Basil Cream (or Genovese Pesto), and EVO Oil."
   },
   {
-    src: "/assets/panplate.png",
-    alt: "Whole grain Pan di20",
+    src: "/assets/Vegetarian.png",
+    alt: "Vegetarian",
     description: "Pan di20 baked with tomato sauce and cooked vegetables of choice (potatoes, carrots, onions, zucchini,etc.).After baking add :fresh vegetables of choice,seasoned with rosemary-infused oil,oregano,salt,and a drizzle of soy sauce.",
   },
   {
-    src: "/assets/panplate.png",
-    alt: "Mini Pan di20",
+    src: "/assets/PulledPorck.png",
+    alt: "The Pulled Porck",
     description: "Pan di20 baked with Mozzarella;after baking, add:Pulled Pork,BBQ Sauce (or your preferred sauce),Sweet and Sour Onion,Mustard Sauce Evo Oil",
   },
   {
-    src: "/assets/panplate.png",
-    alt: "Classic Pan di20",
+    src: "/assets/Tonno.png",
+    alt: "Tuna and Onion",
     description: "Pan di20 baked without toppings;after baking, add:Burrata, Caramelized Red Onion(Ginos), Tuna Tataki,Ginger Gel,and EVO Oil."
   },
   {
     src: "/assets/panplate.png",
-    alt: "Whole grain Pan di20",
+    alt: "Beef Tartar",
     description: "Fior di Latte Mozzarella during baking; after baking.add Beef Tartare, Capers, Pepper,Grilled Spring Onion (Ginos),Mustard Cream, and EVO Oil.Optional additions:Parmesan flakes or cream,Raspberry or Mango gel.",
   },
   {
-    src: "/assets/panplate.png",
-    alt: "Mini Pan di20",
+    src: "/assets/Anatra.png",
+    alt: "Duck Breast",
     description: "Pan di20 baked with Artichoke Cream and Mozzarella; after baking :Duck Breast Roast Beef,Its Jus with Orange,Fresh Artichokes,and Saffron Parmesan Cream.",
   },
 ];
@@ -50,7 +50,7 @@ export default function WhatIsPanSection() {
         <div className={styles.headerRow}>
           <div className={styles.heading}>
             <div className={styles.ribbon}>
-              <h2>What is Pan di20 ?</h2>
+              <h2>What is Pandi20 ?</h2>
             </div>
             <p>The Only Pizza Base with Triple Fermentation.</p>
           </div>
