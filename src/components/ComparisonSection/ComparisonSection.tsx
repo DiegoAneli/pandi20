@@ -2,10 +2,13 @@
 
 import styles from "./ComparisonSection.module.scss";
 import Image from "next/image";
+import { CheckCircle2 } from "lucide-react"; // icona sostitutiva
 
 export default function ComparisonSection() {
   return (
     <section id="comparison" className={styles.section}>
+      <div className={styles.overlay} />
+
       <div className={styles.ellipse}>
         <p>
           <strong>Where Innovation Meets Tradition:</strong>
@@ -21,60 +24,72 @@ export default function ComparisonSection() {
       </h2>
 
       <div className={styles.cards}>
-        {/* Pan di20 */}
-        <div className={styles.card}>
-          <Image
-            src="/assets/pandi20p.png"
-            alt="Pan di20"
-            width={300}
-            height={200}
-            className={styles.image}
-          />
-          <h3>Pan di20</h3>
-          <ul>
-            <li>✅ Leavening and fermentation: 28 hours with <strong>3 rising phases</strong>, for a highly digestible dough.</li>
-            <li>✅ Texture: Crunchy on the outside, soft inside, with a light structure.</li>
-            <li>✅ Versatility: Perfect as a base for gourmet dishes, from appetizers to main courses.</li>
-            <li>✅ Easy to use: Ready in 5 minutes, with no waste.</li>
-            <li>✅ Selected ingredients: High-quality Italian flours, olive oil, and only <span className={styles.highlight}>0.3% brewer’s yeast</span>.</li>
-          </ul>
-        </div>
-
-        {/* Pinsa */}
-        <div className={styles.card}>
-          <Image
-            src="/assets/pinsa.png"
-            alt="Pinsa"
-            width={300}
-            height={200}
-            className={styles.image}
-          />
-          <h3>Pinsa</h3>
-          <ul>
-            <li>✅ Leavening and fermentation: Around 48 hours, with high hydration.</li>
-            <li>✅ Texture: Extremely crispy outside and very soft inside.</li>
-            <li>✅ Usage: Best suited for light, fresh, and delicate toppings.</li>
-            <li>✅ Tradition: An ancient dough made with a mix of flours for a rustic flavor.</li>
-          </ul>
-        </div>
-
-        {/* Pizza */}
-        <div className={styles.card}>
-          <Image
-            src="/assets/pizza3.png"
-            alt="Pizza"
-            width={300}
-            height={200}
-            className={styles.image}
-          />
-          <h3>Pizza</h3>
-          <ul>
-            <li>✅ Leavening and fermentation: Variable, generally between 6 and 24 hours.</li>
-            <li>✅ Texture: Can range from soft and airy (Neapolitan style) to crispy (Roman style).</li>
-            <li>✅ Usage: Designed to be topped and served as a main Course.</li>
-            <li>✅ Popularity: The most well-known and widely consumed baked product worldwide.</li>
-          </ul>
-        </div>
+        {[
+          {
+            title: "Pan di20",
+            image: "/assets/pandi20p.png",
+            items: [
+              "Leavening and fermentation: 28 hours with ",
+              "Texture: Crunchy on the outside, soft inside, with a light structure.",
+              "Versatility: Perfect as a base for gourmet dishes, from appetizers to main courses.",
+              "Easy to use: Ready in 5 minutes, with no waste.",
+              "Selected ingredients: High-quality Italian flours, olive oil, and only ",
+            ],
+            highlight: "0.3% brewer’s yeast",
+            emphasis: "3 rising phases",
+          },
+          {
+            title: "Pinsa",
+            image: "/assets/pinsa.png",
+            items: [
+              "Leavening and fermentation: Around 48 hours, with high hydration.",
+              "Texture: Extremely crispy outside and very soft inside.",
+              "Usage: Best suited for light, fresh, and delicate toppings.",
+              "Tradition: An ancient dough made with a mix of flours for a rustic flavor.",
+            ],
+          },
+          {
+            title: "Pizza",
+            image: "/assets/pizza3.png",
+            items: [
+              "Leavening and fermentation: Variable, generally between 6 and 24 hours.",
+              "Texture: Can range from soft and airy (Neapolitan style) to crispy (Roman style).",
+              "Usage: Designed to be topped and served as a main course.",
+              "Popularity: The most well-known and widely consumed baked product worldwide.",
+            ],
+          },
+        ].map(({ title, image, items, highlight, emphasis }) => (
+          <div className={styles.card} key={title}>
+            <Image
+              src={image}
+              alt={title}
+              width={300}
+              height={200}
+              className={styles.image}
+            />
+            <h3>{title}</h3>
+            <ul>
+              {items.map((item, index) => (
+                <li key={index}>
+                  <CheckCircle2 className={styles.check} />
+                  {item.includes("rising phases") && emphasis ? (
+                    <>
+                      {item}
+                      <strong> {emphasis}</strong>
+                    </>
+                  ) : item.includes("0.3%") && highlight ? (
+                    <>
+                      {item}
+                      <span className={styles.highlight}>{highlight}</span>
+                    </>
+                  ) : (
+                    item
+                  )}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </div>
     </section>
   );
