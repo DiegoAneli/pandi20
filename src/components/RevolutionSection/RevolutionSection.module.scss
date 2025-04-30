@@ -66,14 +66,18 @@
 
 .image {
   width: 100%;
-  max-width: 480px;
+  height: 100%;
+  object-fit: cover;
   border-radius: 1rem;
-  object-fit: contain;
+  max-height: 580px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 
+  @media (max-width: 1024px) {
+    max-height: 400px;
+  }
+
   @media (max-width: 768px) {
-    max-width: 100%;
-    border-radius: 1rem;
+    max-height: 300px;
   }
 }
 
