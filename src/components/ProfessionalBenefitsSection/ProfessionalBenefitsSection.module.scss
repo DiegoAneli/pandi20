@@ -7,7 +7,7 @@
 
 .topLabels {
   max-width: 1000px;
-  margin: 0 auto 3rem;
+  margin: 0 auto 0.1rem;
   display: flex;
   justify-content: space-between;
   padding: 0 2rem;
@@ -113,7 +113,7 @@
 
   .pane {
     width: 100%;
-    max-width: 450px;
+    max-width: 400px;
     height: auto;
     border-radius: 1rem;
   }

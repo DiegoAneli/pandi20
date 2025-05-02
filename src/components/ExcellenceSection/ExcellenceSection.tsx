@@ -2,7 +2,7 @@
 
 import styles from "./ExcellenceSection.module.scss";
 import Image from "next/image";
-import { Mail, Phone, Instagram, Facebook } from "lucide-react";
+import { Instagram, Facebook } from "lucide-react";
 
 export default function ExcellenceSection() {
   return (
@@ -23,14 +23,24 @@ export default function ExcellenceSection() {
             </p>
 
             <div className={styles.socials}>
-              <div className={styles.socialBox}>
+              <a
+                href="https://www.instagram.com/borgo20parma"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.socialBox}
+              >
                 <Instagram className={styles.icon} />
                 <span>@borgo20parma</span>
-              </div>
-              <div className={styles.socialBox}>
+              </a>
+              <a
+                href="https://www.facebook.com/borgo20"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.socialBox}
+              >
                 <Facebook className={styles.icon} />
                 <span>@borgo20</span>
-              </div>
+              </a>
             </div>
           </div>
         </div>
