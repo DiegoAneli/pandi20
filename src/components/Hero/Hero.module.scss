@@ -114,9 +114,9 @@
 }
 
 .brandText {
-  font-weight: 600;
-  font-size: 0.9rem;
-  letter-spacing: 0.15em;
+  font-weight: 00;
+  font-size: 0.1rem;
+  letter-spacing: 0.25em;
   text-transform: uppercase;
 }
 
@@ -165,5 +165,12 @@
 
   @media (max-width: 768px) {
     font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 643px) {
+  .title::after {
+    margin-left: auto;
+    margin-right: auto;
   }
 }

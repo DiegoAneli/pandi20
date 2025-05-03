@@ -11,7 +11,7 @@ export default function ExcellenceSection() {
         <div className={styles.container}>
           <div className={styles.textContent}>
             <h2>
-              <span className={styles.highlight}>Pan di20:</span> A Product Born from Excellence
+              <span className={styles.highlight}>Pandi20:</span> A Product Born from Excellence
             </h2>
             <p>
               Pan di20 was created at Borgo 20, one of the most renowned restaurants in Parma,
@@ -24,7 +24,7 @@ export default function ExcellenceSection() {
 
             <div className={styles.socials}>
               <a
-                href="https://www.instagram.com/borgo20parma"
+                href="https://www.instagram.com/borgo20parma/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.socialBox}
@@ -33,7 +33,7 @@ export default function ExcellenceSection() {
                 <span>@borgo20parma</span>
               </a>
               <a
-                href="https://www.facebook.com/borgo20"
+                href="https://www.facebook.com/Borgo20"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.socialBox}

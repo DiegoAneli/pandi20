@@ -19,7 +19,7 @@ export default function RevolutionSection() {
     {
       icon: <Sparkles className={styles.iconSvg} />,
       title: "Unlimited creativity :",
-      text: "The perfect foundation for innovative and refined proposals. Pan di20 is the perfect blend of innovation and tradition.",
+      text: "The perfect foundation for innovative and refined proposals. Pandi20 is the perfect blend of innovation and tradition.",
     },
   ];
 
@@ -29,13 +29,13 @@ export default function RevolutionSection() {
 
       <div className={styles.content}>
         <div className={styles.left}>
-          <p className={styles.label}>INTRODUCTION TO PAN DI20</p>
+          <p className={styles.label}>INTRODUCTION TO PANDI20</p>
           <h2 className={styles.title}>
             A<span className={styles.revo}>r</span>EVOLUTION
           </h2>
           <p className={styles.subtitle}>In the concept of the pizza base</p>
           <p className={styles.text}>
-            Pan di20 redefines the concept of a pizza base in modern gastronomy.<br></br>
+            Pandi20 redefines the concept of a pizza base in modern gastronomy.<br></br>
             It is not just a supporting element for dishes, <br></br>but a key component
             that enhances every ingredient.
           </p>
@@ -53,7 +53,7 @@ export default function RevolutionSection() {
           </div>
 
           <p className={styles.footerText}>
-            Pan di20 elevates your culinary experience to the next level.
+            Pandi20 elevates your culinary experience to the next level.
           </p>
         </div>
 

@@ -27,13 +27,14 @@ export default function ProfessionalBenefitsSection() {
   return (
     <section className={styles.section}>
       <div className={styles.topLabels}>
-        <div className={styles.labelLeft}>
-          <h2>THE BENEFITS OF<br />PAN DI20 PROFESSIONAL</h2>
-        </div>
-        <div className={styles.labelRight}>
-          <h2>THE ADVANTAGES<br />FOR PROFESSIONALS</h2>
-        </div>
+      <div className={styles.ribbon}>
+        <h2>THE BENEFITS OF PANDI20 PROFESSIONAL</h2>
       </div>
+      <div className={styles.ribbon}>
+        <h2>THE ADVANTAGES FOR PROFESSIONALS</h2>
+      </div>
+    </div>
+
 
       <div className={styles.grid}>
         <ul className={styles.list}>
@@ -41,6 +42,24 @@ export default function ProfessionalBenefitsSection() {
             <li key={i} className={`${styles.featureItem} ${styles.leftItem}`}>
               <Icon className={styles.icon} />
               <span>{label}</span>
+              <motion.svg
+                className={styles.connector}
+                viewBox="0 0 300 100"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                initial={{ pathLength: 0 }}
+                whileInView={{ pathLength: 1 }}
+                transition={{ duration: 1, delay: i * 0.15 }}
+                viewport={{ once: true }}
+              >
+                <path
+                  d="M 0 20 C 80 20, 120 80, 240 100"
+                  stroke="#ffffff"
+                  strokeWidth="2"
+                  strokeDasharray="6 4"
+                  fill="transparent"
+                />
+              </motion.svg>
             </li>
           ))}
         </ul>
@@ -53,6 +72,24 @@ export default function ProfessionalBenefitsSection() {
         <ul className={styles.list}>
           {right.map(({ label, icon: Icon }, i) => (
             <li key={i} className={`${styles.featureItem} ${styles.rightItem}`}>
+              <motion.svg
+                className={styles.connector}
+                viewBox="0 0 300 100"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                initial={{ pathLength: 0 }}
+                whileInView={{ pathLength: 1 }}
+                transition={{ duration: 1, delay: i * 0.15 }}
+                viewport={{ once: true }}
+              >
+                <path
+                  d="M 300 20 C 220 20, 180 80, 60 100"
+                  stroke="#ffffff"
+                  strokeWidth="2"
+                  strokeDasharray="6 4"
+                  fill="transparent"
+                />
+              </motion.svg>
               <Icon className={styles.icon} />
               <span>{label}</span>
             </li>

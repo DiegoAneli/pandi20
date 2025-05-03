@@ -64,9 +64,9 @@ export default function WhatIsPanSection() {
         <div className={styles.headerRow}>
           <div className={styles.heading}>
             <div className={styles.ribbon}>
-              <h2>What is Pan di20 ?</h2>
+              <h2>What is Pandi20 ?</h2>
             </div>
-            <p>The Only Pizza Base with Triple Fermentation.</p>
+           
           </div>
 
           <div className={styles.logo}>
@@ -118,37 +118,37 @@ export default function WhatIsPanSection() {
           <FaLeaf className={styles.icon} />
           <p>
           It is made up of two different flours
-mixed together: type 1 soft wheat
-and durum wheat flour and type 2
-soft wheat, durum wheat and
-spelled flour. This means slightly
-refined flours with a high
-percentage of fibre, without added
-animal fats.
+          mixed together: type 1 soft wheat
+          and durum wheat flour and type 2
+          soft wheat, durum wheat and
+          spelled flour. This means slightly
+          refined flours with a high
+          percentage of fibre, without added
+          animal fats.
 
           </p>
         </div>
         <div className={styles.box}>
           <FaCloud className={styles.icon} />
           <p>
-            <strong>CRISPY CLOUD:</strong>Due to the long
-fermentation of over 28
-hours and its three distinct
-fermentation phases, we
-achieve a crispy crust and
-a soft interior, like-cloud
+            <strong>CRISPY CLOUD: </strong>Due to the long
+                                          fermentation of over 28
+                                          hours and its three distinct
+                                          fermentation phases, we
+                                          achieve a crispy crust and
+                                          a soft interior, like-cloud.
           </p>
         </div>
         <div className={styles.box}>
           <FaUtensils className={styles.icon} />
           <p>
           Perfect for the creativity of modern chefs and
-contemporary pizza makers, allowing them to
-create innovative dishes or pizzas with high
-perceived value. It lets a restaurant pair its
-bread with a signature recipe for a premium
-experience and helps a pizzeria craft a
-product that boosts the average ticket
+            contemporary pizza makers, allowing them to
+            create innovative dishes or pizzas with high
+            perceived value. It lets a restaurant pair its
+            bread with a signature recipe for a premium
+            experience and helps a pizzeria craft a
+            product that boosts the average ticket.
           </p>
         </div>
       </div>

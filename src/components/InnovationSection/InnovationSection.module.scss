@@ -28,6 +28,7 @@
   display: flex;
   justify-content: space-between;
   max-width: 1280px;
+  min-height: 720px;
   margin: 0 auto;
   gap: 4rem;
   padding: 0 2rem;
@@ -76,12 +77,12 @@
 .label {
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   margin-bottom: 0.5rem;
 }
 
 .title {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   font-weight: 700;
   color: #B33340;
   margin-bottom: 0.5rem;

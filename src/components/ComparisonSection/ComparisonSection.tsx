@@ -2,7 +2,7 @@
 
 import styles from "./ComparisonSection.module.scss";
 import Image from "next/image";
-import { CheckCircle2 } from "lucide-react"; // icona sostitutiva
+import { CheckCircle2 } from "lucide-react"; 
 
 export default function ComparisonSection() {
   return (
@@ -20,23 +20,23 @@ export default function ComparisonSection() {
       <h2 className={styles.title}>
         <span>Comparison among</span>
         <br />
-        Pan Di20, Pinsa e Pizza
+        Pandi20, Pinsa and Pizza
       </h2>
 
       <div className={styles.cards}>
         {[
           {
-            title: "Pan di20",
+            title: "Pandi20",
             image: "/assets/pandi20p.png",
             items: [
-              "Leavening and fermentation: 28 hours with ",
+              "Leavening and fermentation: 28 hours with 3 rising phases, for a highly digestible dough.",
               "Texture: Crunchy on the outside, soft inside, with a light structure.",
               "Versatility: Perfect as a base for gourmet dishes, from appetizers to main courses.",
               "Easy to use: Ready in 5 minutes, with no waste.",
-              "Selected ingredients: High-quality Italian flours, olive oil, and only ",
+              "Selected ingredients: High-quality Italian flours, olive oil, and only 0.3% brewer’s yeast.",
             ],
-            highlight: "0.3% brewer’s yeast",
-            emphasis: "3 rising phases",
+            /*highlight: "0.3% brewer’s yeast",
+            emphasis: "3 rising phases",*/
           },
           {
             title: "Pinsa",
@@ -50,11 +50,11 @@ export default function ComparisonSection() {
           },
           {
             title: "Pizza",
-            image: "/assets/pizza3.png",
+            image: "/assets/pizza.png",
             items: [
               "Leavening and fermentation: Variable, generally between 6 and 24 hours.",
               "Texture: Can range from soft and airy (Neapolitan style) to crispy (Roman style).",
-              "Usage: Designed to be topped and served as a main course.",
+              "Usage: Designed to be topped and served as a main Course.",
               "Popularity: The most well-known and widely consumed baked product worldwide.",
             ],
           },

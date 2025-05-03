@@ -1,35 +1,28 @@
 .section {
-    background-color: #ffff;
-    padding: 4rem 1.5rem;
-    text-align: center;
-  }
-  
-  .title {
-    font-size: 2rem;
-    color: #B33340;
-    font-family: "Playfair Display", serif;
-    margin-bottom: 2rem;
-  }
-  
-  .info {
-    font-family: Inter, sans-serif;
+  background-color: #fff;
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  color: #B33340;
+  margin-bottom: 2rem;
+}
+
+.info {
+  color: #2e2e2e;
+  font-size: 1rem;
+  line-height: 2;
+
+  .link {
     color: #2e2e2e;
-    font-size: 1rem;
-    line-height: 2;
-  }
-  
-  .links {
-    margin-top: 2rem;
-  
-    a {
-      margin: 0 1rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+
+    &:hover {
       color: #B33340;
-      font-weight: 500;
-      transition: color 0.3s;
-  
-      &:hover {
-        color: #2e2e2e;
-      }
     }
   }
-  
+}

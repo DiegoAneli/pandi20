@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap');
+/* Il font Montserrat è già gestito da next/font/google, quindi non serve importarlo manualmente */
+
 
 @tailwind base;
 @tailwind components;
@@ -16,7 +17,7 @@ html {
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-montserrat), sans-serif;
   max-width: 100vw;
   overflow-x: hidden;
 }

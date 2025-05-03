@@ -10,6 +10,7 @@ import ProfessionalBenefitsSection from "@/components/ProfessionalBenefitsSectio
 import ExcellenceSection from "@/components/ExcellenceSection/ExcellenceSection";
 //import Header from "@/components/Header/Header";
 //import Footer from "@/components/Footer/Footer";
+import ScrollToTop from "@/components/ScrollToTop/ScrollToTop";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
       <ProfessionalBenefitsSection />
       <ExcellenceSection />
       <ContactSection />
+      <ScrollToTop />
     
     </>
   );

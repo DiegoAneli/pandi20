@@ -21,6 +21,7 @@
   
   .content {
     max-width: 1280px;
+    min-height: 680px;
     margin: 0 auto;
     display: flex;
     gap: 4rem;
@@ -34,9 +35,10 @@
   
   .title {
     color: #B33340;
-    font-size: 2rem;
+    font-size: 2.8rem;
     font-weight: 800;
     margin-bottom: 2rem;
+    text-transform: uppercase;
   }
   
   .features {
@@ -53,7 +55,7 @@
   
     h3 {
       font-weight: 700;
-      font-size: 1rem;
+      font-size: 1.2rem;
       margin: 0;
     }
   

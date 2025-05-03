@@ -40,25 +40,41 @@
 }
 
 .heading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  @media (max-width: 768px) {
+    align-items: center; 
+  }
   .ribbon {
     background-color: #B33340;
-    padding: 0.5rem 2rem;
+    padding: 1.3rem 2rem;
     border-radius: 4px;
-    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+    clip-path: polygon(
+      5% 0%, 
+      95% 0%, 
+      100% 50%, 
+      95% 100%, 
+      5% 100%, 
+      0% 50%
+    );
+    
     display: inline-block;
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 2.8rem;
     font-weight: 800;
     margin: 0;
   }
 
   p {
     font-size: 1.25rem;
+    text-align: center;
     font-weight: 500;
     margin-top: 1rem;
-    max-width: 420px;
+    max-width: 460px;
 
     @media (max-width: 768px) {
       font-size: 1.1rem;
@@ -76,6 +92,9 @@
 
     @media (max-width: 480px) {
       width: 140px;
+    }
+    @media (max-width: 768px) {
+      display: none; 
     }
   }
 }
@@ -177,7 +196,7 @@
     background: white;
     border-right: 2px dashed white;
 
-    @media (max-width: 768px) {
+    @media (max-width: 968px) {
       display: none;
     }
   }
@@ -187,7 +206,7 @@
   }
 
   .icon {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     display: block;
     margin-bottom: 1rem;
   }
@@ -200,5 +219,10 @@
   strong {
     font-weight: bold;
     color: white;
+  }
+
+  @media (max-width: 968px) {
+    max-width: 100%;
+    padding: 0;
   }
 }

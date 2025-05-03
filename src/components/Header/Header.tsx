@@ -17,7 +17,6 @@ export default function Header() {
   }, []);
 
   const leftLinks = [
-    //{ href: "#about", label: "About" },
     { href: "#whats", label: "WHAT'S PANDI20" },
     { href: "#revolution", label: "A REVOLUTION" },
   ];
@@ -28,42 +27,63 @@ export default function Header() {
     { href: "#contact", label: "CONTACT" },
   ];
 
+  const handleLinkClick = () => {
+    setMenuOpen(false); // Chiude il menu dopo il clic
+  };
+
   return (
     <header className={`${styles.header} ${scrolled ? styles.scrolled : ""}`}>
       <div className={styles.container}>
-      <button className={styles.menuButton} onClick={() => setMenuOpen(!menuOpen)}>
-        {menuOpen ? (
-          <X size={28} className={scrolled ? styles.iconScrolled : styles.iconDefault} />
-        ) : (
-          <Menu size={28} className={scrolled ? styles.iconScrolled : styles.iconDefault} />
-        )}
-      </button>
-
-
-
         <nav className={`${styles.navGroup} ${menuOpen ? styles.open : ""}`}>
           <div className={styles.leftNav}>
             {leftLinks.map((link) => (
-              <a key={link.href} href={link.href} className={styles.navLink}>
+              <a
+                key={link.href}
+                href={link.href}
+                className={styles.navLink}
+                onClick={handleLinkClick}
+              >
                 {link.label}
               </a>
             ))}
           </div>
-              
+
           <div className={styles.logoDesktop}>
             <Link href="/" className={styles.logo}>
-              <Image src="/assets/logo.png" alt="Pan di20 logo" width={82} height={70} priority />
+              <Image
+                src="/assets/logo.png"
+                alt="Pan di20 logo"
+                width={82}
+                height={70}
+                priority
+              />
             </Link>
           </div>
 
           <div className={styles.rightNav}>
             {rightLinks.map((link) => (
-              <a key={link.href} href={link.href} className={styles.navLink}>
+              <a
+                key={link.href}
+                href={link.href}
+                className={styles.navLink}
+                onClick={handleLinkClick}
+              >
                 {link.label}
               </a>
             ))}
           </div>
         </nav>
+
+        <button
+          className={styles.menuButton}
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          {menuOpen ? (
+            <X size={28} className={scrolled ? styles.iconScrolled : styles.iconDefault} />
+          ) : (
+            <Menu size={28} className={scrolled ? styles.iconScrolled : styles.iconDefault} />
+          )}
+        </button>
       </div>
     </header>
   );
