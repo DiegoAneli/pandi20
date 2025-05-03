@@ -2,6 +2,7 @@
 
 import { Award, HandCoins, Euro, Trash2 } from "lucide-react";
 import styles from "./InnovationSection.module.scss";
+import Image from "next/image";
 
 export default function InnovationSection() {
   const cards = [
@@ -54,10 +55,12 @@ export default function InnovationSection() {
         </div>
 
         <div className={styles.right}>
-          <img
+          <Image
             src="/assets/chef.png"
             alt="Chef with pizza"
             className={styles.image}
+            width={100}
+            height={600}
           />
         </div>
         <div className={styles.backgroundRight}></div>

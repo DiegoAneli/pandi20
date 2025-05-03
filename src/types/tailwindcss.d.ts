@@ -1,4 +1,4 @@
 declare module 'tailwindcss' {
-    export type Config = any;
+    export type Config = unknown;
   }
   

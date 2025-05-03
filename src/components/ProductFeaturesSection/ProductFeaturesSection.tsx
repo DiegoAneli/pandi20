@@ -37,7 +37,7 @@ export default function ProductFeaturesSection() {
               <Leaf className={styles.icon} />
               <div>
                 <h3>Only Italian Natural Ingredients:</h3>
-                <p>Flour, Water, Olive Oil, Salt, and Brewer's Yeast.</p>
+                <p>Flour, Water, Olive Oil, Salt, and Brewer&apos;s Yeast.</p>
               </div>
             </div>
           </div>
