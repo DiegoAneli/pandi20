@@ -35,8 +35,6 @@ export default function ComparisonSection() {
               "Easy to use: Ready in 5 minutes, with no waste.",
               "Selected ingredients: High-quality Italian flours, olive oil, and only 0.3% brewer’s yeast.",
             ],
-            /*highlight: "0.3% brewer’s yeast",
-            emphasis: "3 rising phases",*/
           },
           {
             title: "Pinsa",
@@ -58,7 +56,7 @@ export default function ComparisonSection() {
               "Popularity: The most well-known and widely consumed baked product worldwide.",
             ],
           },
-        ].map(({ title, image, items, highlight, emphasis }) => (
+        ].map(({ title, image, items }) => (
           <div className={styles.card} key={title}>
             <Image
               src={image}
@@ -72,19 +70,7 @@ export default function ComparisonSection() {
               {items.map((item, index) => (
                 <li key={index}>
                   <CheckCircle2 className={styles.check} />
-                  {item.includes("rising phases") && emphasis ? (
-                    <>
-                      {item}
-                      <strong> {emphasis}</strong>
-                    </>
-                  ) : item.includes("0.3%") && highlight ? (
-                    <>
-                      {item}
-                      <span className={styles.highlight}>{highlight}</span>
-                    </>
-                  ) : (
-                    item
-                  )}
+                  {item}
                 </li>
               ))}
             </ul>
