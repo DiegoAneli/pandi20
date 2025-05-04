@@ -59,7 +59,7 @@ export default function InnovationSection() {
             src="/assets/chef.png"
             alt="Chef with pizza"
             className={styles.image}
-            width={100}
+            width={1000}
             height={600}
           />
         </div>

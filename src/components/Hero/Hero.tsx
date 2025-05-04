@@ -31,8 +31,8 @@ export default function Hero() {
             <Image
               src="/assets/logo.png"
               alt="PAN DI 20 icon"
-              width={80}
-              height={70}
+              width={800}
+              height={700}
               className={styles.logo}
             />
           </div>
