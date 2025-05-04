@@ -54,7 +54,7 @@ export default function Header() {
                 src="/assets/logo.png"
                 alt="Pan di20 logo"
                 width={82}
-                height={70}
+                height={82}
                 priority
               />
             </Link>

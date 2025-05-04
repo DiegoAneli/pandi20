@@ -8,16 +8,6 @@ export default function Hero() {
   return (
     <section className={styles.hero}>
       <div className={styles.overlay} />
-      {/* Parte sinistra: immagine */}
-      <div className={styles.left}>
-        <Image
-          src="/assets/pizzaHero.png"
-          alt="Italian food plate"
-          fill
-          priority
-          className={styles.image}
-        />
-      </div>
 
       {/* Parte destra: logo + testo */}
       <motion.div
@@ -50,6 +40,17 @@ export default function Hero() {
           Bring the new <strong>Italian</strong> style to your venue
         </h1>
       </motion.div>
+
+      {/* Parte sinistra (ora immagine sotto) */}
+      <div className={styles.left}>
+        <Image
+          src="/assets/MargheritaHero.png"
+          alt="Italian food plate"
+          fill
+          priority
+          className={styles.image}
+        />
+      </div>
     </section>
   );
 }
