@@ -17,7 +17,7 @@ export default function Header() {
   }, []);
 
   const leftLinks = [
-    { href: "#whats", label: "WHAT'S PANDI20" },
+    { href: "#whats", label: "WHAT'S PAN DI20" },
     { href: "#revolution", label: "A REVOLUTION" },
   ];
 

@@ -44,7 +44,7 @@ export default function Hero() {
       {/* Parte sinistra (ora immagine sotto) */}
       <div className={styles.left}>
         <Image
-          src="/assets/MargheritaHero.png"
+          src="/assets/panplate.png"
           alt="Italian food plate"
           fill
           priority

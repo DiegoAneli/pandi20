@@ -64,7 +64,7 @@ export default function WhatIsPanSection() {
         <div className={styles.headerRow}>
           <div className={styles.heading}>
             <div className={styles.ribbon}>
-              <h2>What is Pandi20 ?</h2>
+              <h2>What is Pan di20 ?</h2>
             </div>
            
           </div>

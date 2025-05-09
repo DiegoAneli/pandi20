@@ -36,7 +36,7 @@ export default function InnovationSection() {
       <div className={styles.content}>
         <div className={styles.left}>
           <p className={styles.label}>INNOVATION</p>
-          <h2 className={styles.title}>Pandi20</h2>
+          <h2 className={styles.title}>Pan di20</h2>
           <p className={styles.subtitle}>
             The Best offer to a Chef and pizza Maker
           </p>

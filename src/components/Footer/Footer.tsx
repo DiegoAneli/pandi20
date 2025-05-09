@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <p>
-        © {new Date().getFullYear()} Pandi20 · All rights reserved – Developed by{" "}
+        © {new Date().getFullYear()} Pan di20 · All rights reserved – Developed by{" "}
         <a
           href="https://diegoaneli.it"
           target="_blank"

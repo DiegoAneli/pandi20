@@ -11,7 +11,7 @@ export default function ExcellenceSection() {
         <div className={styles.container}>
           <div className={styles.textContent}>
             <h2>
-              <span className={styles.highlight}>Pandi20:</span> A Product Born from Excellence
+              <span className={styles.highlight}>Pan di20:</span> A Product Born from Excellence
             </h2>
             <p>
               Pan di20 was created at Borgo 20, one of the most renowned restaurants in Parma,

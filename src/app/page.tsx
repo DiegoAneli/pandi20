@@ -8,8 +8,6 @@ import ComparisonSection from "@/components/ComparisonSection/ComparisonSection"
 import ProductFeaturesSection from "@/components/ProductFeaturesSection/ProductFeaturesSection";
 import ProfessionalBenefitsSection from "@/components/ProfessionalBenefitsSection/ProfessionalBenefitsSection";
 import ExcellenceSection from "@/components/ExcellenceSection/ExcellenceSection";
-//import Header from "@/components/Header/Header";
-//import Footer from "@/components/Footer/Footer";
 import ScrollToTop from "@/components/ScrollToTop/ScrollToTop";
 
 export default function Home() {
@@ -21,11 +19,12 @@ export default function Home() {
       <TraditionSection />
       <WhatIsPanSection />
       <RevolutionSection />
-      <ComparisonSection />
       <ProductFeaturesSection />
       <ProfessionalBenefitsSection />
+      <ComparisonSection />
       <ExcellenceSection />
       <ContactSection />
+      
       <ScrollToTop />
     
     </>

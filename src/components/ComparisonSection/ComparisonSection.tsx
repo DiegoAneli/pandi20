@@ -20,13 +20,13 @@ export default function ComparisonSection() {
       <h2 className={styles.title}>
         <span>Comparison among</span>
         <br />
-        Pandi20, Pinsa and Pizza
+        Pan di20, Pinsa and Pizza
       </h2>
 
       <div className={styles.cards}>
         {[
           {
-            title: "Pandi20",
+            title: "Pan di20",
             image: "/assets/pandi20p.png",
             items: [
               "Leavening and fermentation: 28 hours with 3 rising phases, for a highly digestible dough.",

@@ -13,7 +13,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Pandi20",
+  title: "Pan di20",
   description: "Pane, emozione e territorio",
 };
 

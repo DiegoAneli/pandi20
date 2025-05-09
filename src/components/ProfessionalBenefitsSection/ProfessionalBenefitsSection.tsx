@@ -28,7 +28,7 @@ export default function ProfessionalBenefitsSection() {
     <section className={styles.section}>
       <div className={styles.topLabels}>
       <div className={styles.ribbon}>
-        <h2>THE BENEFITS OF PANDI20 PROFESSIONAL</h2>
+        <h2>THE BENEFITS OF PAN DI20 PROFESSIONAL</h2>
       </div>
       <div className={styles.ribbon}>
         <h2>THE ADVANTAGES FOR PROFESSIONALS</h2>
