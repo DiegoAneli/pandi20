@@ -133,7 +133,7 @@
 
 .brandText {
   font-weight: 00;
-  font-size: 0.1rem;
+  font-size: 1.5rem;
   letter-spacing: 0.25em;
   text-transform: uppercase;
   //margin-top: -11px;
@@ -142,9 +142,15 @@
 }
 
 .brandLine {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 600;
   line-height: 1.4;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.4;
+  }
 }
 
 .rCircle {
@@ -186,6 +192,7 @@
 
   @media (max-width: 768px) {
     font-size: 1.8rem;
+    margin-top: -1.4rem;
   }
 }
 
