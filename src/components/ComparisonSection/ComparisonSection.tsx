@@ -11,7 +11,7 @@ export default function ComparisonSection() {
 
       <div className={styles.ellipse}>
         <p>
-          <strong>Where Innovation Meets Tradition:</strong>
+          <p>Where Innovation Meets Tradition:</p>
           <br />
           The Only Pizza Base with Triple Fermentation.
         </p>

@@ -1,0 +1,66 @@
+.bottom {
+    display: flex;
+    background-color: #B33340;
+    padding: 3rem 2rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    position: relative;
+    z-index: 1;
+  
+    @media (max-width: 768px) {
+      flex-direction: column;
+      padding: 3rem 1.5rem;
+    }
+  }
+  
+  .box {
+    flex: 1;
+    min-width: 280px;
+    max-width: 33.33%;
+    padding: 0 1.5rem;
+    position: relative;
+  
+    &::after {
+      content: "";
+      position: absolute;
+      top: 1rem;
+      right: 0;
+      width: 1px;
+      height: calc(100% - 2rem);
+      background: white;
+      border-right: 2px dashed white;
+  
+      @media (max-width: 968px) {
+        display: none;
+      }
+    }
+  
+    &:last-child::after {
+      display: none;
+    }
+  
+    .icon {
+      font-size: 1.8rem;
+      display: block;
+      margin-bottom: 1rem;
+      color: white;
+    }
+  
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: white;
+    }
+  
+    strong {
+      font-weight: bold;
+      color: white;
+    }
+  
+    @media (max-width: 968px) {
+      max-width: 100%;
+      padding: 0;
+    }
+  }
+  

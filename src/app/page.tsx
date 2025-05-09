@@ -9,6 +9,7 @@ import ProductFeaturesSection from "@/components/ProductFeaturesSection/ProductF
 import ProfessionalBenefitsSection from "@/components/ProfessionalBenefitsSection/ProfessionalBenefitsSection";
 import ExcellenceSection from "@/components/ExcellenceSection/ExcellenceSection";
 import ScrollToTop from "@/components/ScrollToTop/ScrollToTop";
+import PanBoxSection from "@/components/PanBoxSection/PanBoxSection";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <InnovationSection />
       <TraditionSection />
       <WhatIsPanSection />
+      <PanBoxSection />
       <RevolutionSection />
       <ProductFeaturesSection />
       <ProfessionalBenefitsSection />
