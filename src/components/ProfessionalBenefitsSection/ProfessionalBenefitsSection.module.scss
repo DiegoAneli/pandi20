@@ -64,12 +64,13 @@
 .featureItem {
   display: flex;
   align-items: center;
-  font-size: 1rem;
+  font-size: 1.25rem;
   position: relative;
 
   .icon {
-    width: 24px;
-    height: 24px;
+    width: 32px;
+    height: 32px;
+    stroke-width: 1;
     stroke: white;
     margin-right: 0.75rem;
     flex-shrink: 0;
@@ -77,7 +78,8 @@
   }
 
   span {
-    font-weight: 500;
+    font-size: 1.25rem;
+    font-weight: 300;
     z-index: 2;
   }
 

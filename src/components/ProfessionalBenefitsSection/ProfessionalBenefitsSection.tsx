@@ -53,7 +53,7 @@ export default function ProfessionalBenefitsSection() {
                 viewport={{ once: true }}
               >
                 <path
-                  d="M 0 20 C 80 20, 120 80, 240 100"
+                  d="M 0 50 L 240 50"
                   stroke="#ffffff"
                   strokeWidth="2"
                   strokeDasharray="6 4"
@@ -83,7 +83,7 @@ export default function ProfessionalBenefitsSection() {
                 viewport={{ once: true }}
               >
                 <path
-                  d="M 300 20 C 220 20, 180 80, 60 100"
+                  d="M 300 50 L 60 50"
                   stroke="#ffffff"
                   strokeWidth="2"
                   strokeDasharray="6 4"
