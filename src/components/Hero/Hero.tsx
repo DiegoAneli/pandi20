@@ -2,9 +2,12 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 import styles from "./Hero.module.scss";
 
 export default function Hero() {
+  const { t } = useTranslation();
+
   return (
     <section className={styles.hero}>
       <div className={styles.overlay} />
@@ -28,20 +31,20 @@ export default function Hero() {
           </div>
           <div className={styles.brandText}>
             <span className={styles.brandLine}>
-              THE ITALIAN FOOD
+              {t("hero2.sloganLine1")}
               <span className={styles.highlight}>
-                <span className={styles.rCircle}>r</span>EVOLUTION
+                <span className={styles.rCircle}>r</span>{t("hero2.sloganLine2")}
               </span>
             </span>
           </div>
         </div>
 
         <h1 className={styles.title}>
-          Bring the new <strong>Italian</strong> style to your venue
+          {t("hero2.title.prefix")} <strong>{t("hero2.title.highlight")}</strong> {t("hero2.title.suffix")}
         </h1>
       </motion.div>
 
-      {/* Parte sinistra (ora immagine sotto) */}
+      {/* Parte sinistra (immagine piatto) */}
       <div className={styles.left}>
         <Image
           src="/assets/panplate.png"

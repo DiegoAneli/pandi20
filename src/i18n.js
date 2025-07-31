@@ -1,31 +1,33 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
-import LanguageDetector from 'i18next-browser-languagedetector'; // per rilevare la lingua del browser
-import Backend from 'i18next-http-backend'; // per caricare le traduzioni tramite HTTP, facoltativo
+import LanguageDetector from 'i18next-browser-languagedetector';
+import Backend from 'i18next-http-backend';
 
-// Carica il file di traduzione in formato JSON
 import translationEN from './locales/en/translation.json';
 import translationIT from './locales/it/translation.json';
 
 i18n
-  .use(LanguageDetector) // rilevamento automatico della lingua
-  .use(Backend) // opzionale, se vuoi usare il backend per caricare le traduzioni
-  .use(initReactI18next) // la parte React del setup
+  .use(LanguageDetector)
+  .use(Backend)
+  .use(initReactI18next)
   .init({
     resources: {
-      en: {
-        translation: translationEN,
-      },
-      it: {
-        translation: translationIT,
-      },
+      en: { translation: translationEN },
+      it: { translation: translationIT },
     },
-    fallbackLng: 'en', // lingua di fallback se quella rilevata non è disponibile
+    fallbackLng: 'it', //fallback in italiano, NO eng
+    detection: {
+      //preferenze di rilevamento
+      order: ['querystring', 'localStorage', 'navigator', 'htmlTag'],
+      lookupQuerystring: 'lng',
+      lookupLocalStorage: 'i18nextLng',
+      caches: ['localStorage'], //memorizza la lingua scelta
+    },
     interpolation: {
-      escapeValue: false, // React già si occupa dell'escaping
+      escapeValue: false,
     },
     react: {
-      useSuspense: false, // opzionale: se non vuoi che React sospenda il rendering durante il caricamento delle traduzioni
+      useSuspense: false,
     },
   });
 

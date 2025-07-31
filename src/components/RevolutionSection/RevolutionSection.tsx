@@ -3,23 +3,26 @@
 import styles from "./RevolutionSection.module.scss";
 import Image from "next/image";
 import { Award, Utensils, Sparkles } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export default function RevolutionSection() {
+  const { t } = useTranslation();
+
   const cards = [
     {
       icon: <Award className={styles.iconSvg} />,
-      title: "Premium thick crust Base :",
-      text: "Perfect for pairing with any combination of Toppings, amplifying their flavors.",
+      title: t("revolution.cards.0.title"),
+      text: t("revolution.cards.0.text"),
     },
     {
       icon: <Utensils className={styles.iconSvg} />,
-      title: "Versatile and practical :",
-      text: "Ideal for restaurants, bistros, Pizzerias and catering, thanks to its quick and easy use.",
+      title: t("revolution.cards.1.title"),
+      text: t("revolution.cards.1.text"),
     },
     {
       icon: <Sparkles className={styles.iconSvg} />,
-      title: "Unlimited creativity :",
-      text: "The perfect foundation for innovative and refined proposals. Pan di20 is the perfect blend of innovation and tradition.",
+      title: t("revolution.cards.2.title"),
+      text: t("revolution.cards.2.text"),
     },
   ];
 
@@ -29,16 +32,12 @@ export default function RevolutionSection() {
 
       <div className={styles.content}>
         <div className={styles.left}>
-          <p className={styles.label}>INTRODUCTION TO PAN DI20</p>
+          <p className={styles.label}>{t("revolution.label")}</p>
           <h2 className={styles.title}>
             A<span className={styles.revo}>r</span>EVOLUTION
           </h2>
-          <p className={styles.subtitle}>In the concept of the pizza base</p>
-          <p className={styles.text}>
-            Pan di20 redefines the concept of a pizza base in modern gastronomy.<br></br>
-            It is not just a supporting element for dishes, <br></br>but a key component
-            that enhances every ingredient.
-          </p>
+          <p className={styles.subtitle}>{t("revolution.subtitle")}</p>
+          <p className={styles.text}>{t("revolution.description")}</p>
 
           <div className={styles.cardList}>
             {cards.map((card, i) => (
@@ -52,9 +51,7 @@ export default function RevolutionSection() {
             ))}
           </div>
 
-          <p className={styles.footerText}>
-            Pan di20 elevates your culinary experience to the next level.
-          </p>
+          <p className={styles.footerText}>{t("revolution.footer")}</p>
         </div>
 
         <div className={styles.right}>

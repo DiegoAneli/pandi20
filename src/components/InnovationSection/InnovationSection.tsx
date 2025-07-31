@@ -3,43 +3,41 @@
 import { Award, HandCoins, Euro, Trash2 } from "lucide-react";
 import styles from "./InnovationSection.module.scss";
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 
 export default function InnovationSection() {
+  const { t } = useTranslation();
+
   const cards = [
     {
       icon: <Award size={32} strokeWidth={1} className="text-white" />,
-      title: "Versatility:",
-      text: "Compatible with infinite topping combinations, from classic to gourmet. Ideal for innovative pizzerias.",
+      title: t("innovation.cards.versatility.title"),
+      text: t("innovation.cards.versatility.text"),
     },
     {
       icon: <HandCoins size={32} strokeWidth={1} className="text-white" />,
-      title: "Convenience:",
-      text: "Simplifies plating and usage, suitable for professionals and non-experts alike.",
+      title: t("innovation.cards.convenience.title"),
+      text: t("innovation.cards.convenience.text"),
     },
     {
       icon: <Euro size={32} strokeWidth={1} className="text-white" />,
-      title: "Increase the average ticket value:",
-      text: "Thanks to a unique product with high perceived value for the end customer.",
+      title: t("innovation.cards.ticket.title"),
+      text: t("innovation.cards.ticket.text"),
     },
     {
       icon: <Trash2 size={32} strokeWidth={1} className="text-white" />,
-      title: "No Waste:",
-      text: "Precisely portioned for optimal use.",
+      title: t("innovation.cards.nowaste.title"),
+      text: t("innovation.cards.nowaste.text"),
     },
   ];
 
   return (
     <section id="about" className={styles.section}>
-      {/* sfondo rosso laterale */}
-      
-
       <div className={styles.content}>
         <div className={styles.left}>
-          <p className={styles.label}>INNOVATION</p>
+          <p className={styles.label}>{t("innovation.label")}</p>
           <h2 className={styles.title}>Pan di20</h2>
-          <p className={styles.subtitle}>
-            The Best offer to a Chef and pizza Maker
-          </p>
+          <p className={styles.subtitle}>{t("innovation.subtitle")}</p>
 
           <div className={styles.cardList}>
             {cards.map((card, i) => (

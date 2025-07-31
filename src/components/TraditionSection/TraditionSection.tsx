@@ -1,47 +1,40 @@
+"use client";
+
 import styles from "./TraditionSection.module.scss";
+import { useTranslation } from "react-i18next";
 
 export default function TraditionSection() {
+  const { t } = useTranslation();
+
+  const items = t("tradition.list", { returnObjects: true }) as {
+    title: string;
+    description: string;
+  }[];
+
   return (
     <section className={styles.section}>
       <div className={styles.content}>
         <div className={styles.left}>
-          <p className={styles.label}>PREMIUM QUALITY FROM ITALY</p>
-          <h2 className={styles.title}>TRADITION MEET MODERNITY</h2>
-          <p className={styles.subtitle}>Our commitment to excellence:</p>
+          <p className={styles.label}>{t("tradition.label")}</p>
+          <h2 className={styles.title}>{t("tradition.title")}</h2>
+          <p className={styles.subtitle}>{t("tradition.subtitle")}</p>
 
           <div className={styles.list}>
-            <div className={styles.item}>
-              <h3>01. MADE IN ITALY :</h3>
-              <p>
-                Strictly compliant with FSSC 22000 certifications, ensuring the
-                highest standards of food safety and quality.
-              </p>
-            </div>
-            <div className={styles.item}>
-              <h3>02. Craftsmanship and Technology:</h3>
-              <p>
-                A perfect balance between Italian tradition and cutting-edge
-                innovation, delivering superior performance and consistency.
-              </p>
-            </div>
-            <div className={styles.item}>
-              <h3>03. Preferred by Best Venue in Italy:</h3>
-              <p>
-                For unmatched quality and cost-efficiency. Selected by top
-                restaurants and pizzerias.
-              </p>
-            </div>
+            {items.map((item, index) => (
+              <div className={styles.item} key={index}>
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
+              </div>
+            ))}
           </div>
 
-          <p className={styles.footerText}>
-            Elevate your menu with the authenticity and reliability of Pan di20
-          </p>
+          <p className={styles.footerText}>{t("tradition.footer")}</p>
         </div>
 
         <div className={styles.right}>
           <img
             src="/assets/tradition.png"
-            alt="Pan preparation"
+            alt={t("tradition.alt")}
             className={styles.image}
           />
         </div>

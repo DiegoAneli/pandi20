@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 
+import ClientLangSetter from "@/components/ClientLangSetter"; // nuovo import
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 
@@ -62,7 +63,6 @@ export const metadata: Metadata = {
   },
 };
 
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -85,6 +85,7 @@ export default function RootLayout({
           text-amaranto
         `}
       >
+        <ClientLangSetter /> {/* imposta dinamicamente lang su <html> */}
         <Header />
         <main>{children}</main>
         <Footer />

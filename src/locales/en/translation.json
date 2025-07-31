@@ -12,6 +12,236 @@
     "comparison": "COMPARISON",
     "product": "PRODUCT",
     "contact": "CONTACT"
-  }
+  },
+  "comparison": {
+    "ellipseTitle": "Where Innovation Meets Tradition:",
+    "ellipseSubtitle": "The Only Pizza Base with Triple Fermentation.",
+    "heading1": "Comparison among",
+    "heading2": "Pan di20, Pinsa and Pizza",
+    "pan": {
+      "title": "Pan di20",
+      "item1": "Leavening and fermentation: 28 hours with 3 rising phases, for a highly digestible dough.",
+      "item2": "Texture: Crunchy on the outside, soft inside, with a light structure.",
+      "item3": "Versatility: Perfect as a base for gourmet dishes, from appetizers to main courses.",
+      "item4": "Easy to use: Ready in 5 minutes, with no waste.",
+      "item5": "Selected ingredients: High-quality Italian flours, olive oil, and only 0.3% brewer’s yeast."
+    },
+    "pinsa": {
+      "title": "Pinsa",
+      "item1": "Leavening and fermentation: Around 48 hours, with high hydration.",
+      "item2": "Texture: Extremely crispy outside and very soft inside.",
+      "item3": "Usage: Best suited for light, fresh, and delicate toppings.",
+      "item4": "Tradition: An ancient dough made with a mix of flours for a rustic flavor."
+    },
+    "pizza": {
+      "title": "Pizza",
+      "item1": "Leavening and fermentation: Variable, generally between 6 and 24 hours.",
+      "item2": "Texture: Can range from soft and airy (Neapolitan style) to crispy (Roman style).",
+      "item3": "Usage: Designed to be topped and served as a main Course.",
+      "item4": "Popularity: The most well-known and widely consumed baked product worldwide."
+    }
+  },
+  "excellence": {
+    "title": {
+      "highlight": "Pan di20:",
+      "rest": " A Product Born from Excellence"
+    },
+    "paragraph": {
+      "part1": "Pan di20 was created at Borgo 20, one of the most renowned restaurants in Parma,",
+      "italic": " the heart of Italy’s Food Valley",
+      "part2": "Developed in a kitchen that celebrates quality, innovation, and tradition, Pan di20 still nowadays, offers the excellence of Italian craftsmanship to the professional foodservice industry."
+    },
+    "imageAlt": "Borgo 20 background"
+  },
+  
+  "contact2": {
+    "title": "Contact Us"
+  },
+  "features": {
+    "heading": "Why choose Pan di20?",
+    "versatility": {
+      "title": "Versatility",
+      "description": "Compatible with infinite topping combinations, from classic to gourmet."
+    },
+    "convenience": {
+      "title": "Convenience",
+      "description": "Simplifies plating and usage, suitable for professionals and non-experts alike."
+    },
+    "nowaste": {
+      "title": "No Waste",
+      "description": "Precisely portioned for optimal use."
+    },
+    "value": {
+      "title": "High Value",
+      "description": "A unique product with high perceived value for the end customer."
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "developedBy": "Developed by"
+  },
+  "hero2": {
+    "sloganLine1": "THE ITALIAN FOOD",
+    "sloganLine2": "EVOLUTION",
+    "title": {
+      "prefix": "Bring the new",
+      "highlight": "Italian",
+      "suffix": "style to your venue"
+    }
+  },
+   "innovation": {
+    "label": "INNOVATION",
+    "subtitle": "The Best offer to a Chef and pizza Maker",
+    "cards": {
+      "versatility": {
+        "title": "Versatility:",
+        "text": "Compatible with infinite topping combinations, from classic to gourmet. Ideal for innovative pizzerias."
+      },
+      "convenience": {
+        "title": "Convenience:",
+        "text": "Simplifies plating and usage, suitable for professionals and non-experts alike."
+      },
+      "ticket": {
+        "title": "Increase the average ticket value:",
+        "text": "Thanks to a unique product with high perceived value for the end customer."
+      },
+      "nowaste": {
+        "title": "No Waste:",
+        "text": "Precisely portioned for optimal use."
+      }
+    }
+  },
+  "panbox": {
+    "box1": "It is made up of two different flours mixed together: type 1 soft wheat and durum wheat flour and type 2 soft wheat, durum wheat and spelled flour. This means slightly refined flours with a high percentage of fibre, without added animal fats.",
+    "box2": {
+      "title": "CRISPY CLOUD: ",
+      "text": "Due to the long fermentation of over 28 hours and its three distinct fermentation phases, we achieve a crispy crust and a soft interior, like-cloud."
+    },
+    "box3": "Perfect for the creativity of modern chefs and contemporary pizza makers, allowing them to create innovative dishes or pizzas with high perceived value. It lets a restaurant pair its bread with a signature recipe for a premium experience and helps a pizzeria craft a product that boosts the average ticket."
+  },
+  "product": {
+    "title": "Product Features",
+    "feature1": {
+      "title": "3 Fermentations for Over 28 Hours:",
+      "text": "Superior Taste and High Digestibility"
+    },
+    "feature2": {
+      "title": "Selected Italian flours Type1 e Type2:",
+      "text": "Soft Wheat, Durum Wheat, and Spelt – Rich in Fibers."
+    },
+    "feature3": {
+      "title": "Natural Yeast (0.3%):",
+      "text": "Authentic Aroma and Lightness."
+    },
+    "feature4": {
+      "title": "Only Italian Natural Ingredients:",
+      "text": "Flour, Water, Olive Oil, Salt, and Brewer's Yeast."
+    },
+    "availability": {
+      "title": "Availability:",
+      "frozen": "Frozen: 18 Months",
+      "fresh": "Fresh: 60 Days"
+    },
+    "prepare": {
+      "title": "Easy to prepare:",
+      "text": "Ready in 3-5 Minutes at 220°/280°C\nWith every type of oven"
+    }
+  },
+  "professional": {
+  "title1": "THE BENEFITS OF PAN DI20 PROFESSIONAL",
+  "title2": "THE ADVANTAGES FOR PROFESSIONALS",
+  "left": [
+    "Strictly stretched by hand",
+    "Slow rising and easy to digest",
+    "Ready to cook in 5 minutes",
+    "Suitable for sweet and savoury recipes"
+  ],
+  "right": [
+    "Zero Waste",
+    "No specialised staff needed",
+    "Suitable for any premise",
+    "Perfect with any type of oven",
+    "Can be prepared in a thousands of ways"
+  ]
+},
+"revolution": {
+  "label": "INTRODUCTION TO PAN DI20",
+  "subtitle": "In the concept of the pizza base",
+  "description": "Pan di20 redefines the concept of a pizza base in modern gastronomy.\nIt is not just a supporting element for dishes, but a key component that enhances every ingredient.",
+  "footer": "Pan di20 elevates your culinary experience to the next level.",
+  "cards": [
+    {
+      "title": "Premium thick crust Base :",
+      "text": "Perfect for pairing with any combination of Toppings, amplifying their flavors."
+    },
+    {
+      "title": "Versatile and practical :",
+      "text": "Ideal for restaurants, bistros, Pizzerias and catering, thanks to its quick and easy use."
+    },
+    {
+      "title": "Unlimited creativity :",
+      "text": "The perfect foundation for innovative and refined proposals. Pan di20 is the perfect blend of innovation and tradition."
+    }
+  ]
+},
+"tradition": {
+  "label": "PREMIUM QUALITY FROM ITALY",
+  "title": "TRADITION MEET MODERNITY",
+  "subtitle": "Our commitment to excellence:",
+  "alt": "Pan preparation",
+  "list": [
+    {
+      "title": "01. MADE IN ITALY :",
+      "description": "Strictly compliant with FSSC 22000 certifications, ensuring the highest standards of food safety and quality."
+    },
+    {
+      "title": "02. Craftsmanship and Technology:",
+      "description": "A perfect balance between Italian tradition and cutting-edge innovation, delivering superior performance and consistency."
+    },
+    {
+      "title": "03. Preferred by Best Venue in Italy:",
+      "description": "For unmatched quality and cost-efficiency. Selected by top restaurants and pizzerias."
+    }
+  ],
+  "footer": "Elevate your menu with the authenticity and reliability of Pan di20"
+},
+"whatIsPan": {
+  "title": "What is Pan di20 ?",
+  "slides": [
+    {
+      "src": "/assets/piatto3slide.png",
+      "alt": "Margherita",
+      "description": "Pan di20 baked with tomato sauce and mozzarella; after baking, add: Burrata, Bebè Rosso (Ginos), Basil Cream (or Genovese Pesto), and EVO Oil."
+    },
+    {
+      "src": "/assets/piatto4slide.png",
+      "alt": "Vegetarian",
+      "description": "Pan di20 baked with tomato sauce and cooked vegetables of choice. After baking add: fresh vegetables seasoned with rosemary oil, oregano, and a drizzle of soy sauce."
+    },
+    {
+      "src": "/assets/PulledPorck.png",
+      "alt": "The Pulled Pork",
+      "description": "Pan di20 baked with Mozzarella; after baking, add: Pulled Pork, BBQ Sauce, Sweet and Sour Onion, Mustard Sauce, and EVO Oil."
+    },
+    {
+      "src": "/assets/Tonno.png",
+      "alt": "Tuna and Onion",
+      "description": "Pan di20 baked without toppings; after baking, add: Burrata, Caramelized Red Onion (Ginos), Tuna Tataki, Ginger Gel, and EVO Oil."
+    },
+    {
+      "src": "/assets/panplate.png",
+      "alt": "Beef Tartar",
+      "description": "Mozzarella during baking; after baking add: Beef Tartare, Capers, Pepper, Spring Onion (Ginos), Mustard Cream, EVO Oil. Optional: Parmesan flakes or Raspberry/Mango gel."
+    },
+    {
+      "src": "/assets/Anatra.png",
+      "alt": "Duck Breast",
+      "description": "Pan di20 baked with Artichoke Cream and Mozzarella; after baking add: Duck Breast Roast Beef, Jus with Orange, Fresh Artichokes, and Saffron Parmesan Cream."
+    }
+  ]
+}
+
+
+
 }
 

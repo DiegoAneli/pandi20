@@ -2,61 +2,66 @@
 
 import styles from "./ComparisonSection.module.scss";
 import Image from "next/image";
-import { CheckCircle2 } from "lucide-react"; 
+import { CheckCircle2 } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export default function ComparisonSection() {
+  const { t } = useTranslation();
+
+  const cards = [
+    {
+      title: t("comparison.pan.title"),
+      image: "/assets/pandi20p.png",
+      items: [
+        t("comparison.pan.item1"),
+        t("comparison.pan.item2"),
+        t("comparison.pan.item3"),
+        t("comparison.pan.item4"),
+        t("comparison.pan.item5"),
+      ],
+    },
+    {
+      title: t("comparison.pinsa.title"),
+      image: "/assets/pinsa.png",
+      items: [
+        t("comparison.pinsa.item1"),
+        t("comparison.pinsa.item2"),
+        t("comparison.pinsa.item3"),
+        t("comparison.pinsa.item4"),
+      ],
+    },
+    {
+      title: t("comparison.pizza.title"),
+      image: "/assets/pizza.png",
+      items: [
+        t("comparison.pizza.item1"),
+        t("comparison.pizza.item2"),
+        t("comparison.pizza.item3"),
+        t("comparison.pizza.item4"),
+      ],
+    },
+  ];
+
   return (
     <section id="comparison" className={styles.section}>
       <div className={styles.overlay} />
 
       <div className={styles.ellipse}>
         <p>
-          <p>Where Innovation Meets Tradition:</p>
+          <p>{t("comparison.ellipseTitle")}</p>
           <br />
-          The Only Pizza Base with Triple Fermentation.
+          {t("comparison.ellipseSubtitle")}
         </p>
       </div>
 
       <h2 className={styles.title}>
-        <span>Comparison among</span>
+        <span>{t("comparison.heading1")}</span>
         <br />
-        Pan di20, Pinsa and Pizza
+        {t("comparison.heading2")}
       </h2>
 
       <div className={styles.cards}>
-        {[
-          {
-            title: "Pan di20",
-            image: "/assets/pandi20p.png",
-            items: [
-              "Leavening and fermentation: 28 hours with 3 rising phases, for a highly digestible dough.",
-              "Texture: Crunchy on the outside, soft inside, with a light structure.",
-              "Versatility: Perfect as a base for gourmet dishes, from appetizers to main courses.",
-              "Easy to use: Ready in 5 minutes, with no waste.",
-              "Selected ingredients: High-quality Italian flours, olive oil, and only 0.3% brewer’s yeast.",
-            ],
-          },
-          {
-            title: "Pinsa",
-            image: "/assets/pinsa.png",
-            items: [
-              "Leavening and fermentation: Around 48 hours, with high hydration.",
-              "Texture: Extremely crispy outside and very soft inside.",
-              "Usage: Best suited for light, fresh, and delicate toppings.",
-              "Tradition: An ancient dough made with a mix of flours for a rustic flavor.",
-            ],
-          },
-          {
-            title: "Pizza",
-            image: "/assets/pizza.png",
-            items: [
-              "Leavening and fermentation: Variable, generally between 6 and 24 hours.",
-              "Texture: Can range from soft and airy (Neapolitan style) to crispy (Roman style).",
-              "Usage: Designed to be topped and served as a main Course.",
-              "Popularity: The most well-known and widely consumed baked product worldwide.",
-            ],
-          },
-        ].map(({ title, image, items }) => (
+        {cards.map(({ title, image, items }) => (
           <div className={styles.card} key={title}>
             <Image
               src={image}

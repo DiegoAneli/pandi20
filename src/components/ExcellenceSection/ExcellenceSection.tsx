@@ -3,23 +3,25 @@
 import styles from "./ExcellenceSection.module.scss";
 import Image from "next/image";
 import { Instagram, Facebook } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export default function ExcellenceSection() {
+  const { t } = useTranslation();
+
   return (
     <section className={styles.section}>
       <div className={styles.overlay}>
         <div className={styles.container}>
           <div className={styles.textContent}>
             <h2>
-              <span className={styles.highlight}>Pan di20:</span> A Product Born from Excellence
+              <span className={styles.highlight}>{t("excellence.title.highlight")}</span>
+              {t("excellence.title.rest")}
             </h2>
             <p>
-              Pan di20 was created at Borgo 20, one of the most renowned restaurants in Parma,
-              <span className={styles.italic}> the heart of Italy’s Food Valley</span>.
+              {t("excellence.paragraph.part1")}
+              <span className={styles.italic}>{t("excellence.paragraph.italic")}</span>.
               <br />
-              Developed in a kitchen that celebrates quality, innovation, and tradition, Pan di20
-              still nowadays, offers the excellence of Italian craftsmanship to the professional
-              foodservice industry.
+              {t("excellence.paragraph.part2")}
             </p>
 
             <div className={styles.socials}>
@@ -48,7 +50,7 @@ export default function ExcellenceSection() {
 
       <Image
         src="/assets/borgo.png"
-        alt="Borgo 20 background"
+        alt={t("excellence.imageAlt")}
         fill
         className={styles.bgImage}
         priority

@@ -2,30 +2,33 @@
 
 import { motion } from "framer-motion";
 import styles from "./FeatureSection.module.scss";
-
-const features = [
-  {
-    title: "Versatility",
-    description: "Compatible with infinite topping combinations, from classic to gourmet.",
-  },
-  {
-    title: "Convenience",
-    description: "Simplifies plating and usage, suitable for professionals and non-experts alike.",
-  },
-  {
-    title: "No Waste",
-    description: "Precisely portioned for optimal use.",
-  },
-  {
-    title: "High Value",
-    description: "A unique product with high perceived value for the end customer.",
-  },
-];
+import { useTranslation } from "react-i18next";
 
 export default function FeatureSection() {
+  const { t } = useTranslation();
+
+  const features = [
+    {
+      title: t("features.versatility.title"),
+      description: t("features.versatility.description"),
+    },
+    {
+      title: t("features.convenience.title"),
+      description: t("features.convenience.description"),
+    },
+    {
+      title: t("features.nowaste.title"),
+      description: t("features.nowaste.description"),
+    },
+    {
+      title: t("features.value.title"),
+      description: t("features.value.description"),
+    },
+  ];
+
   return (
     <section className={styles.section}>
-      <h2 className={styles.title}>Why choose Pan di20?</h2>
+      <h2 className={styles.title}>{t("features.heading")}</h2>
       <div className={styles.grid}>
         {features.map((feature, index) => (
           <motion.div

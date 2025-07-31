@@ -4,42 +4,16 @@ import { useState, useRef } from "react";
 import styles from "./WhatIsPanSection.module.scss";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-
-
-const slides = [
-  {
-    src: "/assets/piatto3slide.png",
-    alt: "Margherita",
-    description: "Pan di20 baked with tomato sauce and mozzarella; after baking, add: Burrata, Bebè Rosso (Ginos), Basil Cream (or Genovese Pesto), and EVO Oil."
-  },
-  {
-    src: "/assets/piatto4slide.png",
-    alt: "Vegetarian",
-    description: "Pan di20 baked with tomato sauce and cooked vegetables of choice (potatoes, carrots, onions, zucchini, etc.). After baking add: fresh vegetables seasoned with rosemary oil, oregano, and a drizzle of soy sauce.",
-  },
-  {
-    src: "/assets/PulledPorck.png",
-    alt: "The Pulled Pork",
-    description: "Pan di20 baked with Mozzarella; after baking, add: Pulled Pork, BBQ Sauce, Sweet and Sour Onion, Mustard Sauce, and EVO Oil.",
-  },
-  {
-    src: "/assets/Tonno.png",
-    alt: "Tuna and Onion",
-    description: "Pan di20 baked without toppings; after baking, add: Burrata, Caramelized Red Onion (Ginos), Tuna Tataki, Ginger Gel, and EVO Oil."
-  },
-  {
-    src: "/assets/panplate.png",
-    alt: "Beef Tartar",
-    description: "Mozzarella during baking; after baking add: Beef Tartare, Capers, Pepper, Spring Onion (Ginos), Mustard Cream, EVO Oil. Optional: Parmesan flakes or Raspberry/Mango gel.",
-  },
-  {
-    src: "/assets/Anatra.png",
-    alt: "Duck Breast",
-    description: "Pan di20 baked with Artichoke Cream and Mozzarella; after baking add: Duck Breast Roast Beef, Jus with Orange, Fresh Artichokes, and Saffron Parmesan Cream.",
-  },
-];
+import { useTranslation } from "react-i18next";
 
 export default function WhatIsPanSection() {
+  const { t } = useTranslation();
+  const slides = t("whatIsPan.slides", { returnObjects: true }) as {
+    src: string;
+    alt: string;
+    description: string;
+  }[];
+
   const [current, setCurrent] = useState(0);
   const touchStartX = useRef<number | null>(null);
 
@@ -64,9 +38,8 @@ export default function WhatIsPanSection() {
         <div className={styles.headerRow}>
           <div className={styles.heading}>
             <div className={styles.ribbon}>
-              <h2>What is Pan di20 ?</h2>
+              <h2>{t("whatIsPan.title")}</h2>
             </div>
-           
           </div>
 
           <div className={styles.logo}>

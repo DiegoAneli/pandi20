@@ -7,34 +7,36 @@ import {
   Hand, TrendingUp, Timer, Egg,
   Trash2, ChefHat, UtensilsCrossed, Soup
 } from "lucide-react";
-
-const left = [
-  { label: "Strictly stretched by hand", icon: Hand },
-  { label: "Slow rising and easy to digest", icon: TrendingUp },
-  { label: "Ready to cook in 5 minutes", icon: Timer },
-  { label: "Suitable for sweet and savoury recipes", icon: Egg },
-];
-
-const right = [
-  { label: "Zero Waste", icon: Trash2 },
-  { label: "No specialised staff needed", icon: ChefHat },
-  { label: "Suitable for any premise", icon: UtensilsCrossed },
-  { label: "Perfect with any type of oven", icon: Soup },
-  { label: "Can be prepared in a thousands of ways", icon: Soup },
-];
+import { useTranslation } from "react-i18next";
 
 export default function ProfessionalBenefitsSection() {
+  const { t } = useTranslation();
+
+  const left = [
+    { label: t("professional.left.0"), icon: Hand },
+    { label: t("professional.left.1"), icon: TrendingUp },
+    { label: t("professional.left.2"), icon: Timer },
+    { label: t("professional.left.3"), icon: Egg },
+  ];
+
+  const right = [
+    { label: t("professional.right.0"), icon: Trash2 },
+    { label: t("professional.right.1"), icon: ChefHat },
+    { label: t("professional.right.2"), icon: UtensilsCrossed },
+    { label: t("professional.right.3"), icon: Soup },
+    { label: t("professional.right.4"), icon: Soup },
+  ];
+
   return (
     <section className={styles.section}>
       <div className={styles.topLabels}>
-      <div className={styles.ribbon}>
-        <h2>THE BENEFITS OF PAN DI20 PROFESSIONAL</h2>
+        <div className={styles.ribbon}>
+          <h2>{t("professional.title1")}</h2>
+        </div>
+        <div className={styles.ribbon}>
+          <h2>{t("professional.title2")}</h2>
+        </div>
       </div>
-      <div className={styles.ribbon}>
-        <h2>THE ADVANTAGES FOR PROFESSIONALS</h2>
-      </div>
-    </div>
-
 
       <div className={styles.grid}>
         <ul className={styles.list}>

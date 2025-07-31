@@ -12,5 +12,233 @@
     "comparison": "CONFRONTO",
     "product": "PRODOTTO",
     "contact": "CONTATTO"
-  }
+  },
+  "comparison": {
+    "ellipseTitle": "Dove innovazione e tradizione si incontrano:",
+    "ellipseSubtitle": "L'unica base pizza con tripla fermentazione.",
+    "heading1": "Confronto tra",
+    "heading2": "Pan di20, Pinsa e Pizza",
+    "pan": {
+      "title": "Pan di20",
+      "item1": "Lievitazione e fermentazione: 28 ore con 3 fasi di lievitazione, per un impasto altamente digeribile.",
+      "item2": "Struttura: Croccante fuori, soffice dentro, con una consistenza leggera.",
+      "item3": "Versatilità: Perfetta come base per piatti gourmet, dagli antipasti ai secondi.",
+      "item4": "Facile da usare: Pronta in 5 minuti, senza sprechi.",
+      "item5": "Ingredienti selezionati: Farine italiane di alta qualità, olio d’oliva e solo 0,3% di lievito di birra."
+    },
+    "pinsa": {
+      "title": "Pinsa",
+      "item1": "Lievitazione e fermentazione: Circa 48 ore, con alta idratazione.",
+      "item2": "Struttura: Estremamente croccante fuori e molto soffice dentro.",
+      "item3": "Utilizzo: Ideale per farciture leggere, fresche e delicate.",
+      "item4": "Tradizione: Un impasto antico fatto con un mix di farine per un sapore rustico."
+    },
+    "pizza": {
+      "title": "Pizza",
+      "item1": "Lievitazione e fermentazione: Variabile, generalmente tra 6 e 24 ore.",
+      "item2": "Struttura: Può variare da soffice e ariosa (stile napoletano) a croccante (stile romano).",
+      "item3": "Utilizzo: Pensata per essere farcita e servita come piatto principale.",
+      "item4": "Popolarità: Il prodotto da forno più conosciuto e consumato al mondo."
+    }
+  },
+  "excellence": {
+    "title": {
+      "highlight": "Pan di20:",
+      "rest": " un prodotto nato dall’eccellenza"
+    },
+    "paragraph": {
+      "part1": "Pan di20 è nato da Borgo 20, uno dei ristoranti più rinomati di Parma,",
+      "italic": " nel cuore della Food Valley italiana",
+      "part2": "Sviluppato in una cucina che celebra qualità, innovazione e tradizione, Pan di20 offre ancora oggi l’eccellenza dell’artigianalità italiana al mondo della ristorazione professionale."
+    },
+    "imageAlt": "Sfondo di Borgo 20"
+  },
+  "contact2": {
+    "title": "Contattaci"
+  },
+  "features": {
+    "heading": "Perché scegliere Pan di20?",
+    "versatility": {
+      "title": "Versatilità",
+      "description": "Compatibile con infinite combinazioni di farciture, dalle classiche alle gourmet."
+    },
+    "convenience": {
+      "title": "Comodità",
+      "description": "Semplifica l’impiattamento e l’utilizzo, adatto a professionisti e non esperti."
+    },
+    "nowaste": {
+      "title": "Zero Sprechi",
+      "description": "Porzionato con precisione per un utilizzo ottimale."
+    },
+    "value": {
+      "title": "Alto Valore",
+      "description": "Un prodotto unico con alto valore percepito dal cliente finale."
+    }
+  },
+  "footer": {
+    "rights": "Tutti i diritti riservati",
+    "developedBy": "Sviluppato da"
+  },
+  "hero2": {
+    "sloganLine1": "IL CIBO ITALIANO",
+    "sloganLine2": "EVOLUZIONE",
+    "title": {
+      "prefix": "Porta il nuovo stile",
+      "highlight": "Italiano",
+      "suffix": "nel tuo locale"
+    }
+  },
+  "innovation": {
+    "label": "INNOVAZIONE",
+    "subtitle": "La miglior proposta per Chef e Pizzaioli",
+    "cards": {
+      "versatility": {
+        "title": "Versatilità:",
+        "text": "Compatibile con infinite combinazioni di farciture, dalle classiche alle gourmet. Ideale per pizzerie innovative."
+      },
+      "convenience": {
+        "title": "Comodità:",
+        "text": "Semplifica l’impiattamento e l’utilizzo, adatto a professionisti e non esperti."
+      },
+      "ticket": {
+        "title": "Aumenta lo scontrino medio:",
+        "text": "Grazie a un prodotto unico con alto valore percepito dal cliente finale."
+      },
+      "nowaste": {
+        "title": "Zero Sprechi:",
+        "text": "Porzionato con precisione per un utilizzo ottimale."
+      }
+    }
+  },
+  "panbox": {
+    "box1": "È composto da due tipi diversi di farine mescolate: farina di grano tenero tipo 1 e semola di grano duro e farina di grano tenero tipo 2, grano duro e farro. Si tratta quindi di farine poco raffinate con un’alta percentuale di fibre, senza aggiunta di grassi animali.",
+    "box2": {
+      "title": "NUVOLA CROCCANTE: ",
+      "text": "Grazie alla lunga fermentazione di oltre 28 ore e alle sue tre distinte fasi di lievitazione, otteniamo una crosta croccante e un interno soffice, come una nuvola."
+    },
+    "box3": "Perfetto per la creatività degli chef moderni e dei pizzaioli contemporanei, consente di creare piatti o pizze innovative ad alto valore percepito. Permette a un ristorante di accompagnare il proprio pane con una ricetta d'autore per un'esperienza premium e aiuta una pizzeria a realizzare un prodotto che aumenta lo scontrino medio."
+  },
+  "product": {
+    "title": "Caratteristiche del prodotto",
+    "feature1": {
+      "title": "3 Fermentazioni per oltre 28 ore:",
+      "text": "Gusto superiore e alta digeribilità"
+    },
+    "feature2": {
+      "title": "Farine italiane selezionate Tipo 1 e Tipo 2:",
+      "text": "Grano tenero, grano duro e farro – Ricche di fibre."
+    },
+    "feature3": {
+      "title": "Lievito naturale (0,3%):",
+      "text": "Aroma autentico e leggerezza."
+    },
+    "feature4": {
+      "title": "Solo ingredienti naturali italiani:",
+      "text": "Farina, acqua, olio d’oliva, sale e lievito di birra."
+    },
+    "availability": {
+      "title": "Disponibilità:",
+      "frozen": "Surgelato: 18 mesi",
+      "fresh": "Fresco: 60 giorni"
+    },
+    "prepare": {
+      "title": "Facile da preparare:",
+      "text": "Pronto in 3-5 minuti a 220°/280°C\nCon ogni tipo di forno"
+    }
+  },
+  "professional": {
+  "title1": "I BENEFICI DI PAN DI20 PROFESSIONAL",
+  "title2": "I VANTAGGI PER I PROFESSIONISTI",
+  "left": [
+    "Steso rigorosamente a mano",
+    "Lunga lievitazione e alta digeribilità",
+    "Pronto da cuocere in 5 minuti",
+    "Adatto a ricette dolci e salate"
+  ],
+  "right": [
+    "Zero sprechi",
+    "Non richiede personale specializzato",
+    "Adatto a qualsiasi attività",
+    "Perfetto con ogni tipo di forno",
+    "Può essere preparato in migliaia di modi"
+  ]
+},
+"revolution": {
+  "label": "INTRODUZIONE A PAN DI20",
+  "subtitle": "Nel concetto di base per pizza",
+  "description": "Pan di20 ridefinisce il concetto di base per pizza nella gastronomia moderna.\nNon è solo un supporto per i piatti, ma un elemento chiave che valorizza ogni ingrediente.",
+  "footer": "Pan di20 eleva la tua esperienza culinaria a un livello superiore.",
+  "cards": [
+    {
+      "title": "Base spessa premium:",
+      "text": "Perfetta per abbinarsi a qualsiasi combinazione di ingredienti, esaltandone i sapori."
+    },
+    {
+      "title": "Versatile e pratica:",
+      "text": "Ideale per ristoranti, bistrot, pizzerie e catering, grazie alla sua rapidità e semplicità d'uso."
+    },
+    {
+      "title": "Creatività illimitata:",
+      "text": "La base perfetta per proposte innovative e raffinate. Pan di20 è il perfetto equilibrio tra innovazione e tradizione."
+    }
+  ]
+},
+"tradition": {
+  "label": "QUALITÀ PREMIUM DALL'ITALIA",
+  "title": "TRADIZIONE E MODERNITÀ",
+  "subtitle": "Il nostro impegno per l'eccellenza:",
+  "alt": "Preparazione del Pan",
+  "list": [
+    {
+      "title": "01. MADE IN ITALY :",
+      "description": "Rigorosamente conforme alle certificazioni FSSC 22000, per garantire i più alti standard di sicurezza e qualità alimentare."
+    },
+    {
+      "title": "02. Artigianalità e Tecnologia:",
+      "description": "Un perfetto equilibrio tra tradizione italiana e innovazione all'avanguardia, per prestazioni superiori e costanti."
+    },
+    {
+      "title": "03. Preferito dai migliori locali in Italia:",
+      "description": "Per qualità impareggiabile ed efficienza nei costi. Scelto da ristoranti e pizzerie d’eccellenza."
+    }
+  ],
+  "footer": "Eleva il tuo menu con l'autenticità e l'affidabilità di Pan di20"
+},
+"whatIsPan": {
+  "title": "Cos'è Pan di20?",
+  "slides": [
+    {
+      "src": "/assets/piatto3slide.png",
+      "alt": "Margherita",
+      "description": "Pan di20 cotto con salsa di pomodoro e mozzarella; dopo la cottura aggiungere: Burrata, Bebè Rosso (Ginos), Crema al basilico (o Pesto Genovese), e Olio EVO."
+    },
+    {
+      "src": "/assets/piatto4slide.png",
+      "alt": "Vegetariana",
+      "description": "Pan di20 cotto con salsa di pomodoro e verdure cotte a scelta. Dopo la cottura aggiungere: verdure fresche condite con olio al rosmarino, origano e una spruzzata di salsa di soia."
+    },
+    {
+      "src": "/assets/PulledPorck.png",
+      "alt": "Pulled Pork",
+      "description": "Pan di20 cotto con Mozzarella; dopo la cottura aggiungere: Pulled Pork, Salsa BBQ, Cipolla in agrodolce, Salsa alla senape e Olio EVO."
+    },
+    {
+      "src": "/assets/Tonno.png",
+      "alt": "Tonno e Cipolla",
+      "description": "Pan di20 cotto senza condimenti; dopo la cottura aggiungere: Burrata, Cipolla Rossa Caramellata (Ginos), Tonno Tataki, Gel di Zenzero e Olio EVO."
+    },
+    {
+      "src": "/assets/panplate.png",
+      "alt": "Tartare di Manzo",
+      "description": "Mozzarella durante la cottura; dopo la cottura aggiungere: Tartare di Manzo, Capperi, Pepe, Cipollotto (Ginos), Crema alla senape, Olio EVO. Opzionale: Scaglie di Parmigiano o Gel di lampone/mango."
+    },
+    {
+      "src": "/assets/Anatra.png",
+      "alt": "Petto d'Anatra",
+      "description": "Pan di20 cotto con crema di carciofi e mozzarella; dopo la cottura aggiungere: Roast-beef di petto d’anatra, Jus all’arancia, carciofi freschi e crema allo zafferano e Parmigiano."
+    }
+  ]
+}
+
+
 }

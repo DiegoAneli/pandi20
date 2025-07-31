@@ -2,11 +2,14 @@
 
 import styles from "./ContactSection.module.scss";
 import { FaEnvelope, FaPhone } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 export default function ContactSection() {
+  const { t } = useTranslation();
+
   return (
     <section id="contact" className={styles.section}>
-      <h2 className={styles.title}>Contact Us</h2>
+      <h2 className={styles.title}>{t("contact2.title")}</h2>
       <div className={styles.info}>
         <p>
           <a href="mailto:info@pandi20.it" className={styles.link}>
