@@ -8,12 +8,12 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const slides = [
   {
-    src: "/assets/margherita.png",
+    src: "/assets/piatto3slide.png",
     alt: "Margherita",
     description: "Pan di20 baked with tomato sauce and mozzarella; after baking, add: Burrata, Bebè Rosso (Ginos), Basil Cream (or Genovese Pesto), and EVO Oil."
   },
   {
-    src: "/assets/Vegetarian.png",
+    src: "/assets/piatto4slide.png",
     alt: "Vegetarian",
     description: "Pan di20 baked with tomato sauce and cooked vegetables of choice (potatoes, carrots, onions, zucchini, etc.). After baking add: fresh vegetables seasoned with rosemary oil, oregano, and a drizzle of soy sauce.",
   },
