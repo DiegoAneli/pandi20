@@ -1,0 +1,17 @@
+{
+  "hero": {
+    "title": "The Italian food revolution",
+    "description": "Bring the new Italian style to your venue"
+  },
+  "contact": {
+    "phone": "Contact us at"
+  },
+  "nav": {
+    "whats": "WHAT'S PAN DI20",
+    "revolution": "A REVOLUTION",
+    "comparison": "COMPARISON",
+    "product": "PRODUCT",
+    "contact": "CONTACT"
+  }
+}
+

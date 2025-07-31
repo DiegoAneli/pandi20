@@ -1,0 +1,16 @@
+{
+  "hero": {
+    "title": "La rivoluzione del cibo italiano",
+    "description": "Porta il nuovo stile italiano nel tuo locale"
+  },
+  "contact": {
+    "phone": "Contattaci al"
+  },
+  "nav": {
+    "whats": "COS'È PAN DI20",
+    "revolution": "UNA RIVOLUZIONE",
+    "comparison": "CONFRONTO",
+    "product": "PRODOTTO",
+    "contact": "CONTATTO"
+  }
+}
