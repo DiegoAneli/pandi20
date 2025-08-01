@@ -49,7 +49,7 @@ export default function ExcellenceSection() {
       </div>
 
       <Image
-        src="/assets/borgo.png"
+        src="/assets/borgo2.png"
         alt={t("excellence.imageAlt")}
         fill
         className={styles.bgImage}
