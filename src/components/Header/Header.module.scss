@@ -29,26 +29,22 @@
   }
 }
 
-
 .container {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0.1rem 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: relative;
 }
 
-
+/* ✅ Navbar con logo sempre centrato */
 .navGroup {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr; // sinistra | logo | destra
   align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
   width: 100%;
 
   @media (max-width: 768px) {
+    display: flex;
     flex-direction: column;
     background-color: white;
     color: var(--color-amaranto);
@@ -70,14 +66,38 @@
   }
 }
 
-.leftNav,
-.rightNav {
+/* ✅ Voci compatte vicino al logo */
+.leftNav {
   display: flex;
   gap: 1rem;
+  justify-content: flex-end; // le voci restano vicine al logo
 
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+  }
+}
+
+.rightNav {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start; // le voci restano vicine al logo
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.logoDesktop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    display: none;
   }
 }
 
@@ -85,20 +105,11 @@
   z-index: 10;
   display: flex;
   align-items: center;
-  margin-left: 25px;
-  margin-right: px;
   justify-content: center;
+  margin: 0;
 }
 
-.logoDesktop {
-  display: flex;
-
-  @media (max-width: 768px) {
-    display: none;
-  }
-}
-
-
+/* Icone */
 .iconDefault {
   color: white;
   transition: color 0.3s ease;
@@ -109,12 +120,9 @@
   transition: color 0.3s ease;
 }
 
-
-
-.menuIcon {
-  color: white;
+.iconMenuOpen {
+  color: black;
 }
-
 
 .navLink {
   font-size: 1rem;
@@ -163,7 +171,13 @@
   }
 
   @media (max-width: 768px) {
-    display: none; 
+    display: none;
+  }
+}
+
+.header.scrolled {
+  .languageSwitcher button {
+    color: var(--color-amaranto); 
   }
 }
 
@@ -182,19 +196,7 @@
       border: none;
       cursor: pointer;
       font-size: 1.3rem;
-      color: black; 
+      color: black;
     }
   }
-}
-
-.iconDefault {
-  color: white;
-}
-
-.iconScrolled {
-  color: white;
-}
-
-.iconMenuOpen {
-  color: black; 
 }

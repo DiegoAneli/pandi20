@@ -1,0 +1,62 @@
+.privacy {
+  width: 100%;
+  min-height: 100vh; 
+  margin: 0;
+  padding: 3rem 1.5rem;
+  background: #1f1f1f;   
+  color: #f1f1f1;        
+  line-height: 1.7;
+  font-family: var(--font-montserrat, sans-serif);
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #B33340;       
+    text-align: center;
+    border-bottom: 2px solid #B33340;
+    padding-bottom: 0.5rem;
+  }
+
+  section {
+    margin-bottom: 2rem;
+
+    h2 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: #B33340;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #f1f1f1;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      margin: 0.5rem 0 1rem 1.5rem;
+      list-style: disc;
+
+      li {
+        margin-bottom: 0.5rem;
+        color: #ddd; 
+      }
+    }
+
+    strong {
+      color: #B33340;
+    }
+  }
+
+  a {
+    color: #B33340;
+    text-decoration: underline;
+
+    &:hover {
+      color: #e24d5d; 
+    }
+  }
+}

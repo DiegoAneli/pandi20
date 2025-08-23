@@ -47,12 +47,10 @@ export default function ComparisonSection() {
       <div className={styles.overlay} />
 
       <div className={styles.ellipse}>
-        <p>
-          <p>{t("comparison.ellipseTitle")}</p>
-          <br />
-          {t("comparison.ellipseSubtitle")}
-        </p>
+        <p>{t("comparison.ellipseTitle")}</p>
+        <p>{t("comparison.ellipseSubtitle")}</p>
       </div>
+
 
       <h2 className={styles.title}>
         <span>{t("comparison.heading1")}</span>

@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 
-import ClientLangSetter from "@/components/ClientLangSetter"; // nuovo import
+import ClientLangSetter from "@/components/ClientLangSetter"; 
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
+import CookieBanner from "@/components/CookieBanner/CookieBanner";
 
 // Font Google
 const montserrat = Montserrat({
@@ -14,6 +15,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://pandi20.it"), 
   title: "Pandi20 | The Italian Food Revolution",
   description: "Pan di20 è l'innovativa base pizza italiana con tre fasi di fermentazione, perfetta per chef, pizzerie e ristoranti moderni.",
   keywords: [
@@ -38,7 +40,7 @@ export const metadata: Metadata = {
     siteName: "Pandi20",
     images: [
       {
-        url: "/assets/logo.png",
+        url: "/assets/logo.png", // sarà risolto come https://pandi20.it/assets/logo.png
         width: 1200,
         height: 630,
         alt: "Pan di20 pizza gourmet",
@@ -52,6 +54,7 @@ export const metadata: Metadata = {
     title: "Pandi20 | The Italian Food Revolution",
     description: "La pizza base italiana innovativa per chef e pizzerie moderne.",
     site: "@pandi20",
+    images: ["/assets/logo.png"], // idem → https://pandi20.it/assets/logo.png
   },
   robots: {
     index: true,
@@ -88,6 +91,7 @@ export default function RootLayout({
         <ClientLangSetter /> {/* imposta dinamicamente lang su <html> */}
         <Header />
         <main>{children}</main>
+        <CookieBanner />
         <Footer />
       </body>
     </html>

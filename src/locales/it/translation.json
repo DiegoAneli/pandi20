@@ -77,7 +77,13 @@
   },
   "footer": {
     "rights": "Tutti i diritti riservati",
-    "developedBy": "Sviluppato da"
+    "developedBy": "Sviluppato da",
+    "privacy": "Privacy & Cookie Policy"
+  },
+  "cookie": {
+  "message": "Questo sito utilizza solo cookie tecnici. Consulta la nostra",
+  "privacy": "Privacy Policy",
+  "button": "Ho capito!"
   },
   "hero2": {
     "sloganLine1": "IL CIBO ITALIANO",
@@ -88,6 +94,34 @@
       "suffix": "nel tuo locale"
     }
   },
+  
+  "privacyPage": {
+    "title": "Privacy & Cookie Policy",
+    "sections": {
+      "ownerTitle": "1. Titolare del trattamento",
+      "ownerText": "Il titolare del trattamento dei dati è Borgo20 Bistrot contemporaneo, con sede legale in Borgo XX Marzo, 14/16 Parma 43121, email di contatto: info@pandi20.it.",
+      "dataTitle": "2. Tipologie di dati raccolti",
+      "dataText": "Questo sito ha funzione esclusivamente informativa e non raccoglie dati personali tramite form di contatto o registrazione. I dati eventualmente forniti volontariamente dagli utenti (ad esempio tramite email diretta) saranno trattati unicamente per rispondere alle richieste ricevute.",
+      "purposeTitle": "3. Finalità del trattamento",
+      "purposeList": [
+        "Fornire informazioni e risposte alle richieste inviate dall’utente.",
+        "Adempiere a eventuali obblighi di legge."
+      ],
+      "purposeNote": "Non è previsto alcun utilizzo a fini commerciali, promozionali o di profilazione.",
+      "cookieTitle": "4. Cookie Policy",
+      "cookieText": "Questo sito utilizza solo cookie tecnici strettamente necessari al suo funzionamento. Non vengono installati cookie di profilazione o di terze parti.",
+      "rightsTitle": "5. Diritti dell’utente",
+      "rightsList": [
+        "Accesso ai propri dati personali.",
+        "Richiesta di rettifica o cancellazione.",
+        "Limitazione o opposizione al trattamento."
+      ],
+      "rightsNote": "Per esercitare tali diritti è possibile contattare il Titolare all’indirizzo email: info@pandi20.it.",
+      "updateTitle": "6. Aggiornamenti",
+      "updateText": "La presente informativa potrà essere aggiornata in qualsiasi momento in base a modifiche normative o funzionali del sito."
+    }
+  },
+
   "innovation": {
     "label": "INNOVAZIONE",
     "subtitle": "La miglior proposta per Chef e Pizzaioli",

@@ -78,7 +78,39 @@
   },
   "footer": {
     "rights": "All rights reserved",
-    "developedBy": "Developed by"
+    "developedBy": "Developed by",
+    "privacy": "Privacy & Cookie Policy"
+  },
+  "cookie": {
+  "message": "This site uses only technical cookies. See our",
+  "privacy": "privacy policy",
+  "button": "I Understand!"
+  },
+  "privacyPage": {
+    "title": "Privacy & Cookie Policy",
+    "sections": {
+      "ownerTitle": "1. Data Controller",
+      "ownerText": "The data controller is Borgo20 Bistrot contemporaneo, headquartered at Borgo XX Marzo, 14/16 Parma 43121, contact email: info@pandi20.it.",
+      "dataTitle": "2. Types of Data Collected",
+      "dataText": "This website is exclusively informative and does not collect personal data through contact forms or registrations. Any data voluntarily provided by users (for example via direct email) will be processed solely to respond to the requests received.",
+      "purposeTitle": "3. Purpose of Processing",
+      "purposeList": [
+        "Provide information and replies to user requests.",
+        "Fulfill any legal obligations."
+      ],
+      "purposeNote": "There is no use for commercial, promotional, or profiling purposes.",
+      "cookieTitle": "4. Cookie Policy",
+      "cookieText": "This website uses only strictly necessary technical cookies required for its functioning. No profiling cookies or third-party cookies are installed.",
+      "rightsTitle": "5. User Rights",
+      "rightsList": [
+        "Access their personal data.",
+        "Request rectification or deletion.",
+        "Restrict or object to processing."
+      ],
+      "rightsNote": "To exercise these rights, users can contact the Controller at: info@pandi20.it.",
+      "updateTitle": "6. Updates",
+      "updateText": "This notice may be updated at any time based on regulatory changes or functional adjustments of the site."
+    }
   },
   "hero2": {
     "sloganLine1": "THE ITALIAN FOOD",
